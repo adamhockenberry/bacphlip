@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-pkg-YOUR-USERNAME-HERE", # Replace with your own username
+    name="bacphlip-adamhockenberry", # Replace with your own username
     version="0.0.1",
-    author="Example Author",
-    author_email="author@example.com",
-    description="A small example package",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    author="Adam J Hockenberry",
+    author_email="adam.hockenberry@utexas.edu",
+    description="A simple applied machine learning classifier to predict bacteriophage lifestyle",
+#    long_description=long_description,
+#    long_description_content_type="text/markdown",
+    url="https://github.com/adamhockenberry/bacphlip-py",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
