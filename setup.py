@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-INSTALL_REQUIRES=['biopython>=1.7']
+INSTALL_REQUIRES=["biopython>=1.7r", "pandas>=0.25"]
 
 
 setuptools.setup(
