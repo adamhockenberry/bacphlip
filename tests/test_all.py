@@ -15,3 +15,8 @@ def func(x):
 
 def test_answer():
     assert func(3) == 5
+
+
+def test_imports():
+    from Bio import SeqIO
+    import bacphlip
