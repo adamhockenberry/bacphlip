@@ -3,15 +3,16 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+INSTALL_REQUIRES=['biopython>=1.7']
+
+
 setuptools.setup(
     name="bacphlip-adamhockenberry", # Replace with your own username
     version="0.0.1",
     author="Adam J Hockenberry",
     author_email="adam.hockenberry@utexas.edu",
     description="A simple applied machine learning classifier to predict bacteriophage lifestyle",
-#    long_description=long_description,
-#    long_description_content_type="text/markdown",
-    install_requires=["biopython"],
+    install_requires=INSTALL_REQUIRES,
     url="https://github.com/adamhockenberry/bacphlip-py",
     classifiers=[
         "Programming Language :: Python :: 3",
