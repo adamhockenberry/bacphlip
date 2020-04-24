@@ -11,6 +11,7 @@ setuptools.setup(
     description="A simple applied machine learning classifier to predict bacteriophage lifestyle",
 #    long_description=long_description,
 #    long_description_content_type="text/markdown",
+    install_requires=["biopython"],
     url="https://github.com/adamhockenberry/bacphlip-py",
     classifiers=[
         "Programming Language :: Python :: 3",
