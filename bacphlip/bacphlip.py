@@ -6,32 +6,75 @@ import pandas as pd
 from collections import OrderedDict
 import joblib
 
+"""
+TODO:
+    Check that input fastas are DNA
+    Check that hmmsearch inputs are amino acids
+    Check for suspicious genome lengths
+    Allow for batch input (one fasta per line)
+    Allow for existing amino acid file input (rather than 6frame)
+"""
+
+
+
 SKLEARN_CLASSIFIER = pkg_resources.resource_filename('bacphlip', 'data/rf_best.joblib')
 HMMER_DB = pkg_resources.resource_filename('bacphlip', 'data/prot_models.hmm')
 
 TOTAL_PROTEIN_MODELS=206
+MIN_PROT_LENGTH=40
 
 def check_existing_file(infile):
+    """
+    Checks whether a file does not exist and provides a hopefully informative error message
+    if that's not the case.
+
+    Inputs:
+        infile - path to a hopefully existing file
+    """
     if not os.path.exists(infile):
         raise Exception("Input file {} does not appear to exist.".format(infile))
 
 def check_nonexisting_file(outfile):
+    """
+    Checks whether a file to be written already  exists and provides an informative message if
+    that check fails.
+    
+    Inputs:
+        outfile - path to a hopefully non-existent file file
+    """ 
     if os.path.exists(outfile):
         raise Exception("Specified output file ({}) appears to already exist. " 
                 "Remove before running program again or specify force_overwrite flag ('-f').".format(outfile))
 
-def check_fasta(nt_records):
+def check_genome_fasta_reqs(nt_records):
+    """
+    Checks whether a fasta file (meant to be a genome (i.e. DNA) file) can be read and ensures that it only
+    contains one record.
+    
+    Another check to implement is that the fasta record is of DNA type.
+
+    Inputs:
+        nt_records - list from SeqIO.parse that ideally contains one element.
+    """
     if len(nt_records) == 1:
         nt_record = nt_records[0]
     elif len(nt_records) == 0:
-        raise Exception('Input fasta file appears to be empty. Ensure that the file contains what you think it does.')
+        raise Exception('Input fasta file appears to be empty. "
+                "Ensure that the file contains what you think it does.')
     else:
-        raise Exception('Input fasta file appears to contain more than one sequence record. Currently bacphlip only supports single contig inputs.')
+        raise Exception('Input fasta file appears to contain more than one sequence record. "
+                "Currently bacphlip only supports single contig inputs.')
     return nt_record
 
-def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False, min_prot_length=40):
+def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False):
     """
-    Should ensure that input is nucleotide data for six frame translation to make sense.
+    Reads a genome fasta file and outputs an amino acid fasta file containing all possible
+    six frame translational reading frames that are longer than a set length threshold.
+
+    Inputs:
+        fasta_file_path - system path to a valid genome fasta file
+        output_file_path - system path for writing the amino acid file
+        force_overwrite - if True will write "output_file_path" regardless of whether it exists
     """
     ###Basic error testing of input/output files
     check_existing_file(fasta_file_path)
@@ -39,7 +82,7 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
         check_nonexisting_file(output_file_path)
     ###Read in file    
     nt_records = list(SeqIO.parse(fasta_file_path, 'fasta'))
-    nt_record = check_fasta(nt_records)
+    nt_record = check_genome_fasta_reqs(nt_records)
     ###Run basic code
     genome_id = nt_record.id
     prots = []
@@ -51,7 +94,7 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
         seq = str(tempy.seq).split('*')
         ###Append the sequences if they are longer than the defined minimum
         for j in seq:
-            if len(j) >= min_prot_length:
+            if len(j) >= MIN_PROT_LENGTH:
                 prots.append(j)
         ###Repeat for the reverse complement
         tempy = nt_record.reverse_complement()[i+modulo:].translate()
@@ -66,6 +109,16 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
     return    
 
 def hmmsearch_py(aa_fasta_file, hmmsearch_out, force_overwrite=False):
+    """
+    Runs hmmsearch on an amino acid fasta file against a pre-compiled database of protein domains
+    of interest. 
+
+    Inputs:
+        aa_fasta_file - system path to a valid amino acid fasta file
+        hmmsearch_out - system path for writing the hmmsearch output file
+        force_overwrite - if True will write "hmmsearch_out" regardless of whether it exists
+    """
+
     check_existing_file(aa_fasta_file)
     if not force_overwrite:
         check_nonexisting_file(hmmsearch_out)
@@ -74,6 +127,15 @@ def hmmsearch_py(aa_fasta_file, hmmsearch_out, force_overwrite=False):
     return
 
 def process_hmmsearch(hmmsearch_file, hmmsearch_df_out, force_overwrite=False):
+    """
+    Processes the hmmsearch default output file into a pandas dataframe -> tab-seperated file
+    describing the presence/absence of each protein in the hmmsearch file.
+
+    Inputs:
+        hmmsearch_file - system path to a valid hmmsearch output file
+        hmmsearch_df_out - system path for writing the processed tsv file
+        force_overwrite - if True will write "hmmsearch_df_out" regardless of whether it exists
+    """
     check_existing_file(hmmsearch_file)
     if not force_overwrite:
         check_nonexisting_file(hmmsearch_df_out)
@@ -91,7 +153,18 @@ def process_hmmsearch(hmmsearch_file, hmmsearch_df_out, force_overwrite=False):
     single_df.to_csv(hmmsearch_df_out, sep='\t')
     return
 
-def predict_lifestyle(hmmsearch_df, predictions_out):
+def predict_lifestyle(hmmsearch_df, predictions_out, force_overwrite=False):
+    """
+    Predicts the lifestyle of a phage given the location to a table describing the presence/absence of a set of
+    protein domains and a pre-trained scikit-learn classifier.
+
+    Inputs:
+        hmmsearch_df - system path to a valid tsv file
+        predictions_out - system path for writing the final predictions file
+        force_overwrite - if True will write "hmmsearch_df_out" regardless of whether it exists
+    """
+    if not force_overwrite:
+        check_nonexisting_file(predictions_out)
     clf = joblib.load(SKLEARN_CLASSIFIER)
     ###Load dataset
     single_df = pd.read_csv(hmmsearch_df, sep='\t', index_col=0)
@@ -106,6 +179,10 @@ def predict_lifestyle(hmmsearch_df, predictions_out):
 
 
 def main():
+    """
+    Command-line implementation of the full prediction pipeline. Currently implemented only for single genome
+    inputs but lots of time could be saved during the classifier prediction step by implementing a batch option.
+    """
     import argparse 
     ###Command line arguments    
     parser = argparse.ArgumentParser()
@@ -123,7 +200,7 @@ def main():
     six_frame_translate(args.input_file, six_frame_file, force_overwrite=args.force_overwrite)
     hmmsearch_py(six_frame_file, hmmsearch_file, force_overwrite=args.force_overwrite)
     process_hmmsearch(hmmsearch_file, hmmsearch_df, force_overwrite=args.force_overwrite)
-    predict_lifestyle(hmmsearch_df, predictions_file)
+    predict_lifestyle(hmmsearch_df, predictions_file, force_overwrite=args.force_overwrite)
     
 
 if __name__ == '__main__':

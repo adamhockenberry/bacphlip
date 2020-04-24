@@ -1,7 +1,5 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
 
 INSTALL_REQUIRES=[
         "biopython>=1.7", 
@@ -9,76 +7,52 @@ INSTALL_REQUIRES=[
         "joblib>=0.13"
         ]
 
+#TEST_REQUIRES = [
+#    # testing and coverage
+#    "pytest",
+#    "coverage",
+#    "pytest-cov",
+#    # to be able to run `python setup.py checkdocs`
+#    "collective.checkdocs",
+#    "pygments",
+#]
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+with open("bacphlip/__init__.py", "r") as f:
+    init = f.readlines()
+for line in init:
+    if "__version__" in line:
+        __version__ = line.split('=')[-1]
 
 setuptools.setup(
-    name="bacphlip-adamhockenberry", # Replace with your own username
-    version="0.0.1",
+    name="bacphlip",
+    version=__version__,
     author="Adam J Hockenberry",
     author_email="adam.hockenberry@utexas.edu",
-    description="A simple applied machine learning classifier to predict bacteriophage lifestyle",
+    description="A Random Forest classifier to predict bacteriophage lifestyle",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     install_requires=INSTALL_REQUIRES,
     url="https://github.com/adamhockenberry/bacphlip-py",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Topic :: Scientific/Engineering :: Bio-Informatics",
+        "Intended Audience :: Science/Research",
     ],
     python_requires='>=3.6',
 )
 
 
 """
-from setuptools import setup
-
-
-INSTALL_REQUIRES = ["Biopython"]
-
-TEST_REQUIRES = [
-    # testing and coverage
-    "pytest",
-    "coverage",
-    "pytest-cov",
-    # to be able to run `python setup.py checkdocs`
-    "collective.checkdocs",
-    "pygments",
-]
-
-
-with open("README.md", "r") as f:
-    long_description = f.read()
-
-with open("PeptideBuilder/__init__.py", "r") as f:
-    init = f.readlines()
-
-for line in init:
-    if "__version__" in line:
-        __version__ = line.split('"')[-2]
-
 setup(
-    name="PeptideBuilder",
-    version=__version__,
-    author="Matthew Z. Tien",
-    author_email="Matthew.Tien89@gmail.com",
-    description="Create peptide PDB files with specified geometry",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/clauswilke/PeptideBuilder",
     download_url="https://github.com/clauswilke/PeptideBuilder/releases",
     platforms="Tested on Mac OS X and Windows 10",
     packages=["PeptideBuilder"],
-    install_requires=INSTALL_REQUIRES,
     extras_require={"test": TEST_REQUIRES + INSTALL_REQUIRES,},
-    classifiers=[
-        # Trove classifiers
-        # (https://pypi.python.org/pypi?%3Aaction=list_classifiers)
-        "Development Status :: 5 - Production/Stable",
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 3",
-        "Topic :: Scientific/Engineering :: Bio-Informatics",
-        "Topic :: Scientific/Engineering :: Chemistry",
-        "Intended Audience :: Science/Research",
-    ],
 )
 
 """

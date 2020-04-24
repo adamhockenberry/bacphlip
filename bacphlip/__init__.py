@@ -1,6 +1,8 @@
 """
 
-``BACPHLIP`` package predicting phave lifestyle based on the presence of conserved protein domains
+BACPHLIP package predicting phage lifestyle (temperate or virulent) based on the presence 
+of conserved protein domains and a Random Forest classifier.
+
 Written by Adam J Hockenberry and Claus O Wilke
 
 Python modules
