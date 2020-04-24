@@ -1,0 +1,8 @@
+README.md
+setup.py
+bacphlip/__init__.py
+bacphlip/bacphlip.py
+bacphlip_adamhockenberry.egg-info/PKG-INFO
+bacphlip_adamhockenberry.egg-info/SOURCES.txt
+bacphlip_adamhockenberry.egg-info/dependency_links.txt
+bacphlip_adamhockenberry.egg-info/top_level.txt

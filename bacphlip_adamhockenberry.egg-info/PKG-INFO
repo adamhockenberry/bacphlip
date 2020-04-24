@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: bacphlip-adamhockenberry
+Version: 0.0.1
+Summary: A simple applied machine learning classifier to predict bacteriophage lifestyle
+Home-page: https://github.com/adamhockenberry/bacphlip-py
+Author: Adam J Hockenberry
+Author-email: adam.hockenberry@utexas.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

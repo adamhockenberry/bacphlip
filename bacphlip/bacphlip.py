@@ -91,8 +91,7 @@ def six_frame_translate(fasta_file_path, output_file_path, min_prot_length=40):
 #
 #    return
 
-
-if __name__ == '__main__':
+def main():
     import argparse 
     ###Command line arguments    
     parser = argparse.ArgumentParser()
@@ -103,6 +102,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
     six_frame_translate(args.input_file, args.output_file)
     exit(0)
+
+
+
+if __name__ == '__main__':
+    main()
+
 #    ###
 #    process_args()
 #    
