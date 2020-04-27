@@ -1,16 +1,9 @@
 import pytest
+import bacphlip
 
 import os
 import filecmp
 
-import bacphlip
-
-def test_support_files():
-    assert os.path.exists(bacphlip.HMMER_DB)    
-    assert os.path.exists(bacphlip.SKLEARN_CLASSIFIER)    
-
-    assert os.path.getsize(bacphlip.HMMER_DB) != 0    
-    assert os.path.getsize(bacphlip.SKLEARN_CLASSIFIER) != 0
 
 
 def test_example_files():
@@ -26,6 +19,12 @@ def test_example_files():
         assert os.path.getsize(example_path) != 0
         file_dict[example_file] = example_path
     return file_dict
+
+def test_support_files():
+    assert os.path.exists(bacphlip.HMMER_DB)    
+    assert os.path.exists(bacphlip.SKLEARN_CLASSIFIER)    
+    assert os.path.getsize(bacphlip.HMMER_DB) != 0    
+    assert os.path.getsize(bacphlip.SKLEARN_CLASSIFIER) != 0
 
 def test_translate(tmp_path):
     file_dict = test_example_files()
@@ -43,7 +42,7 @@ def test_process_hmmsearch(tmp_path):
     assert (os.path.exists(tmp_hmmsearchtsv_path) == True) and (os.path.getsize(tmp_hmmsearchtsv_path) != 0)
     filecmp.cmp(file_dict['genome_example.fasta.hmmsearch.tsv'], tmp_hmmsearchtsv_path)
 
-def test_process_hmmsearch(tmp_path):
+def test_bacphlip(tmp_path):
     file_dict = test_example_files()
     tmp_bacphlip_path = tmp_path / 'six_frame.fasta.bacphlip' 
     assert os.path.exists(tmp_bacphlip_path) == False
@@ -51,9 +50,11 @@ def test_process_hmmsearch(tmp_path):
     assert (os.path.exists(tmp_bacphlip_path) == True) and (os.path.getsize(tmp_bacphlip_path) != 0)
     filecmp.cmp(file_dict['genome_example.fasta.bacphlip'], tmp_bacphlip_path)
 
-
-
-
-
-
-
+def test_no_overwrite(tmp_path):
+    file_dict = test_example_files()
+    tmp_six_frame_path = tmp_path / 'six_frame.fasta' 
+    assert os.path.exists(tmp_six_frame_path) == False
+    bacphlip.six_frame_translate(file_dict['genome_example.fasta'], tmp_six_frame_path)
+    assert (os.path.exists(tmp_six_frame_path) == True) and (os.path.getsize(tmp_six_frame_path) != 0)
+    with pytest.raises(Exception):
+        bacphlip.six_frame_translate(file_dict['genome_example.fasta'], tmp_six_frame_path)

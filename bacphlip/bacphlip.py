@@ -30,7 +30,7 @@ def check_existing_file(infile):
         infile - path to a hopefully existing file
     """
     if not os.path.exists(infile):
-        raise Exception("Input file {} does not appear to exist.".format(infile))
+        raise Exception("Input file ({}) does not appear to exist.".format(infile))
 
 def check_nonexisting_file(outfile):
     """
@@ -79,7 +79,7 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
     if not force_overwrite:
         check_nonexisting_file(output_file_path)
     ###Read in file    
-    nt_records = list(SeqIO.parse(fasta_file_path, 'fasta'))
+    nt_records = list(SeqIO.parse(fasta_file_path, format='fasta'))
     nt_record = check_genome_fasta_reqs(nt_records)
     ###Run basic code
     genome_id = nt_record.id
@@ -176,7 +176,7 @@ def predict_lifestyle(hmmsearch_df, predictions_out, force_overwrite=False):
 
 
 
-def main():
+def main(args):
     """
     Command-line implementation of the full prediction pipeline. Currently implemented only for single genome
     inputs but lots of time could be saved during the classifier prediction step by implementing a batch option.
@@ -188,7 +188,7 @@ def main():
             required=True, help="Should be a valid path to a single genome (nucleotide) fasta file containing only 1 record/contig.")
     parser.add_argument("-f", "--force_overwrite", action="store_true",\
             help="Whether to overwrite all existing files that will be created if they exist. Default is False")
-    args = parser.parse_args()    
+    args = parser.parse_args(args)    
     ### 
     six_frame_file = args.input_file + '.6frame'
     hmmsearch_file = args.input_file + '.hmmsearch'
@@ -202,4 +202,5 @@ def main():
     
 
 if __name__ == '__main__':
-    main()
+    import sys
+    main(sys.argv[1:])

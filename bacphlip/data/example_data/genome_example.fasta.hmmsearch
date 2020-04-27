@@ -32,7 +32,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8140.86
+# Mc/sec: 8609.22
 //
 Query:       COG0675  [M=427]
 Scores for complete sequences (score includes all domains):
@@ -59,7 +59,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7827.10
+# Mc/sec: 8477.34
 //
 Query:       COG1475  [M=569]
 Scores for complete sequences (score includes all domains):
@@ -85,8 +85,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11309.87
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6041.19
 //
 Query:       COG1662  [M=326]
 Scores for complete sequences (score includes all domains):
@@ -112,8 +112,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9458.89
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8542.08
 //
 Query:       COG1961  [M=505]
 Scores for complete sequences (score includes all domains):
@@ -140,7 +140,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7134.51
+# Mc/sec: 9990.74
 //
 Query:       COG2452  [M=203]
 Scores for complete sequences (score includes all domains):
@@ -166,8 +166,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 3559.64
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6924.53
 //
 Query:       COG2801  [M=1561]
 Scores for complete sequences (score includes all domains):
@@ -194,7 +194,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 10688.44
+# Mc/sec: 12672.65
 //
 Query:       COG2826  [M=331]
 Scores for complete sequences (score includes all domains):
@@ -221,7 +221,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6999.97
+# Mc/sec: 5521.94
 //
 Query:       COG2963  [M=445]
 Scores for complete sequences (score includes all domains):
@@ -248,7 +248,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 11163.75
+# Mc/sec: 10848.47
 //
 Query:       COG3039  [M=462]
 Scores for complete sequences (score includes all domains):
@@ -275,7 +275,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11150.73
+# Mc/sec: 11024.17
 //
 Query:       COG3316  [M=219]
 Scores for complete sequences (score includes all domains):
@@ -302,7 +302,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7763.21
+# Mc/sec: 7808.45
 //
 Query:       COG3335  [M=366]
 Scores for complete sequences (score includes all domains):
@@ -329,7 +329,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 7144.09
+# Mc/sec: 7469.61
 //
 Query:       COG3415  [M=350]
 Scores for complete sequences (score includes all domains):
@@ -356,7 +356,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9242.38
+# Mc/sec: 10248.89
 //
 Query:       COG3547  [M=835]
 Scores for complete sequences (score includes all domains):
@@ -383,7 +383,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 11029.34
+# Mc/sec: 12921.16
 //
 Query:       COG4342  [M=291]
 Scores for complete sequences (score includes all domains):
@@ -410,7 +410,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9424.06
+# Mc/sec: 9201.58
 //
 Query:       COG4389  [M=677]
 Scores for complete sequences (score includes all domains):
@@ -436,8 +436,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10176.87
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.00
+# Mc/sec: 9912.84
 //
 Query:       COG4584  [M=406]
 Scores for complete sequences (score includes all domains):
@@ -464,7 +464,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8567.65
+# Mc/sec: 8991.34
 //
 Query:       COG4644  [M=766]
 Scores for complete sequences (score includes all domains):
@@ -490,8 +490,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9281.85
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9280.76
 //
 Query:       COG4973  [M=301]
 Scores for complete sequences (score includes all domains):
@@ -518,7 +518,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7683.17
+# Mc/sec: 7883.78
 //
 Query:       COG4974  [M=300]
 Scores for complete sequences (score includes all domains):
@@ -544,8 +544,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9390.27
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9144.39
 //
 Query:       COG5471  [M=107]
 Scores for complete sequences (score includes all domains):
@@ -572,7 +572,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 5417.26
+# Mc/sec: 4714.99
 //
 Query:       PHA02517  [M=297]
 Scores for complete sequences (score includes all domains):
@@ -599,7 +599,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9432.54
+# Mc/sec: 8625.91
 //
 Query:       PHA02518  [M=213]
 Scores for complete sequences (score includes all domains):
@@ -626,7 +626,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 5730.59
+# Mc/sec: 8014.18
 //
 Query:       PHA02601  [M=338]
 Scores for complete sequences (score includes all domains):
@@ -653,7 +653,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6898.73
+# Mc/sec: 7206.63
 //
 Query:       PRK00236  [M=341]
 Scores for complete sequences (score includes all domains):
@@ -679,8 +679,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8777.38
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9030.00
 //
 Query:       PRK00283  [M=299]
 Scores for complete sequences (score includes all domains):
@@ -707,7 +707,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7385.72
+# Mc/sec: 7811.09
 //
 Query:       PRK01287  [M=356]
 Scores for complete sequences (score includes all domains):
@@ -734,7 +734,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9762.20
+# Mc/sec: 9271.55
 //
 Query:       PRK02436  [M=245]
 Scores for complete sequences (score includes all domains):
@@ -761,7 +761,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7766.91
+# Mc/sec: 7300.59
 //
 Query:       PRK05084  [M=361]
 Scores for complete sequences (score includes all domains):
@@ -787,8 +787,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 10222.01
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10067.49
 //
 Query:       PRK06526  [M=265]
 Scores for complete sequences (score includes all domains):
@@ -815,7 +815,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8103.72
+# Mc/sec: 8081.58
 //
 Query:       PRK08181  [M=271]
 Scores for complete sequences (score includes all domains):
@@ -842,7 +842,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8515.11
+# Mc/sec: 8516.36
 //
 Query:       PRK09409  [M=301]
 Scores for complete sequences (score includes all domains):
@@ -869,7 +869,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8716.15
+# Mc/sec: 8524.44
 //
 Query:       PRK09692  [M=413]
 Scores for complete sequences (score includes all domains):
@@ -896,7 +896,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10047.87
+# Mc/sec: 11171.84
 //
 Query:       PRK09870  [M=200]
 Scores for complete sequences (score includes all domains):
@@ -923,7 +923,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7559.50
+# Mc/sec: 8041.56
 //
 Query:       PRK09871  [M=198]
 Scores for complete sequences (score includes all domains):
@@ -950,7 +950,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6329.43
+# Mc/sec: 5838.22
 //
 Query:       PRK13413  [M=203]
 Scores for complete sequences (score includes all domains):
@@ -977,7 +977,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7742.94
+# Mc/sec: 7464.95
 //
 Query:       PRK13698  [M=323]
 Scores for complete sequences (score includes all domains):
@@ -1004,7 +1004,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8897.96
+# Mc/sec: 9405.14
 //
 Query:       PRK14702  [M=279]
 Scores for complete sequences (score includes all domains):
@@ -1031,7 +1031,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8657.29
+# Mc/sec: 8341.14
 //
 Query:       PRK15417  [M=337]
 Scores for complete sequences (score includes all domains):
@@ -1057,8 +1057,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10593.57
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9554.18
 //
 Query:       TIGR00616  [M=281]
 Scores for complete sequences (score includes all domains):
@@ -1084,8 +1084,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9526.99
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8848.74
 //
 Query:       TIGR01633  [M=504]
 Scores for complete sequences (score includes all domains):
@@ -1112,7 +1112,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11545.02
+# Mc/sec: 11508.99
 //
 Query:       TIGR01634  [M=180]
 Scores for complete sequences (score includes all domains):
@@ -1138,8 +1138,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 5601.33
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5464.73
 //
 Query:       TIGR01764  [M=242]
 Scores for complete sequences (score includes all domains):
@@ -1166,7 +1166,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8414.46
+# Mc/sec: 8473.07
 //
 Query:       TIGR01766  [M=402]
 Scores for complete sequences (score includes all domains):
@@ -1193,7 +1193,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10997.62
+# Mc/sec: 10842.16
 //
 Query:       TIGR01969  [M=260]
 Scores for complete sequences (score includes all domains):
@@ -1220,7 +1220,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8447.59
+# Mc/sec: 8415.80
 //
 Query:       TIGR02126  [M=166]
 Scores for complete sequences (score includes all domains):
@@ -1246,8 +1246,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6885.31
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6030.87
 //
 Query:       TIGR02224  [M=305]
 Scores for complete sequences (score includes all domains):
@@ -1274,7 +1274,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9608.15
+# Mc/sec: 9113.74
 //
 Query:       TIGR02225  [M=299]
 Scores for complete sequences (score includes all domains):
@@ -1301,7 +1301,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8170.70
+# Mc/sec: 8654.08
 //
 Query:       TIGR02249  [M=322]
 Scores for complete sequences (score includes all domains):
@@ -1328,7 +1328,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9093.94
+# Mc/sec: 9215.65
 //
 Query:       TIGR02681  [M=245]
 Scores for complete sequences (score includes all domains):
@@ -1355,7 +1355,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7815.33
+# Mc/sec: 8121.74
 //
 Query:       TIGR03453  [M=402]
 Scores for complete sequences (score includes all domains):
@@ -1382,7 +1382,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11232.59
+# Mc/sec: 11229.20
 //
 Query:       TIGR03742  [M=358]
 Scores for complete sequences (score includes all domains):
@@ -1409,7 +1409,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8412.05
+# Mc/sec: 8455.96
 //
 Query:       TIGR03764  [M=542]
 Scores for complete sequences (score includes all domains):
@@ -1436,7 +1436,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11207.93
+# Mc/sec: 11343.18
 //
 Query:       TIGR03815  [M=364]
 Scores for complete sequences (score includes all domains):
@@ -1463,7 +1463,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10033.43
+# Mc/sec: 9948.66
 //
 Query:       TIGR04402  [M=195]
 Scores for complete sequences (score includes all domains):
@@ -1490,7 +1490,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7498.40
+# Mc/sec: 7978.01
 //
 Query:       cd00303  [M=2321]
 Scores for complete sequences (score includes all domains):
@@ -1516,8 +1516,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12658.40
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12360.56
 //
 Query:       cd00338  [M=525]
 Scores for complete sequences (score includes all domains):
@@ -1544,7 +1544,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 4453.31
+# Mc/sec: 6570.88
 //
 Query:       cd00397  [M=1046]
 Scores for complete sequences (score includes all domains):
@@ -1570,8 +1570,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10628.57
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12179.00
 //
 Query:       cd00447  [M=445]
 Scores for complete sequences (score includes all domains):
@@ -1598,7 +1598,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10064.65
+# Mc/sec: 10950.48
 //
 Query:       cd00569  [M=435]
 Scores for complete sequences (score includes all domains):
@@ -1624,8 +1624,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7059.39
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7670.77
 //
 Query:       cd00796  [M=373]
 Scores for complete sequences (score includes all domains):
@@ -1651,8 +1651,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 8046.66
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7537.75
 //
 Query:       cd00797  [M=314]
 Scores for complete sequences (score includes all domains):
@@ -1679,7 +1679,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9167.95
+# Mc/sec: 9464.02
 //
 Query:       cd00798  [M=539]
 Scores for complete sequences (score includes all domains):
@@ -1706,7 +1706,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9830.55
+# Mc/sec: 9555.58
 //
 Query:       cd00799  [M=401]
 Scores for complete sequences (score includes all domains):
@@ -1733,7 +1733,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7595.10
+# Mc/sec: 6898.20
 //
 Query:       cd00800  [M=336]
 Scores for complete sequences (score includes all domains):
@@ -1759,8 +1759,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8707.89
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9300.08
 //
 Query:       cd00801  [M=406]
 Scores for complete sequences (score includes all domains):
@@ -1786,8 +1786,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 5740.69
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5830.05
 //
 Query:       cd01120  [M=475]
 Scores for complete sequences (score includes all domains):
@@ -1814,7 +1814,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10343.22
+# Mc/sec: 10617.87
 //
 Query:       cd01123  [M=330]
 Scores for complete sequences (score includes all domains):
@@ -1841,7 +1841,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6002.77
+# Mc/sec: 6377.65
 //
 Query:       cd01182  [M=337]
 Scores for complete sequences (score includes all domains):
@@ -1868,7 +1868,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8775.38
+# Mc/sec: 9071.26
 //
 Query:       cd01184  [M=562]
 Scores for complete sequences (score includes all domains):
@@ -1929,8 +1929,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         3  (0.00645161); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               3  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6156.79
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6271.78
 //
 Query:       cd01185  [M=395]
 Scores for complete sequences (score includes all domains):
@@ -1957,7 +1957,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9874.79
+# Mc/sec: 9641.47
 //
 Query:       cd01186  [M=374]
 Scores for complete sequences (score includes all domains):
@@ -1984,7 +1984,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9817.54
+# Mc/sec: 9763.36
 //
 Query:       cd01187  [M=670]
 Scores for complete sequences (score includes all domains):
@@ -2010,8 +2010,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9512.91
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9098.55
 //
 Query:       cd01188  [M=408]
 Scores for complete sequences (score includes all domains):
@@ -2038,7 +2038,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11239.65
+# Mc/sec: 10471.08
 //
 Query:       cd01189  [M=391]
 Scores for complete sequences (score includes all domains):
@@ -2065,7 +2065,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7674.23
+# Mc/sec: 7246.47
 //
 Query:       cd01190  [M=247]
 Scores for complete sequences (score includes all domains):
@@ -2092,7 +2092,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9091.37
+# Mc/sec: 9023.38
 //
 Query:       cd01191  [M=267]
 Scores for complete sequences (score includes all domains):
@@ -2119,7 +2119,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8273.36
+# Mc/sec: 8717.53
 //
 Query:       cd01192  [M=190]
 Scores for complete sequences (score includes all domains):
@@ -2145,8 +2145,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7018.80
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6919.76
 //
 Query:       cd01193  [M=303]
 Scores for complete sequences (score includes all domains):
@@ -2173,7 +2173,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8335.45
+# Mc/sec: 7909.88
 //
 Query:       cd01194  [M=325]
 Scores for complete sequences (score includes all domains):
@@ -2200,7 +2200,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9473.76
+# Mc/sec: 9093.17
 //
 Query:       cd01195  [M=315]
 Scores for complete sequences (score includes all domains):
@@ -2226,8 +2226,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8478.48
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8558.63
 //
 Query:       cd01196  [M=320]
 Scores for complete sequences (score includes all domains):
@@ -2254,7 +2254,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9406.31
+# Mc/sec: 9015.60
 //
 Query:       cd01197  [M=191]
 Scores for complete sequences (score includes all domains):
@@ -2280,8 +2280,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 7530.81
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7169.01
 //
 Query:       cd02042  [M=892]
 Scores for complete sequences (score includes all domains):
@@ -2308,7 +2308,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12498.36
+# Mc/sec: 11889.81
 //
 Query:       cd03408  [M=363]
 Scores for complete sequences (score includes all domains):
@@ -2334,8 +2334,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 4881.70
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4720.37
 //
 Query:       cd03714  [M=1019]
 Scores for complete sequences (score includes all domains):
@@ -2361,8 +2361,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12552.81
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12557.39
 //
 Query:       cd03767  [M=216]
 Scores for complete sequences (score includes all domains):
@@ -2389,7 +2389,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7246.92
+# Mc/sec: 7611.53
 //
 Query:       cd03768  [M=499]
 Scores for complete sequences (score includes all domains):
@@ -2416,7 +2416,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8126.19
+# Mc/sec: 8844.14
 //
 Query:       cd03769  [M=205]
 Scores for complete sequences (score includes all domains):
@@ -2442,8 +2442,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 8297.05
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8257.92
 //
 Query:       cd03770  [M=541]
 Scores for complete sequences (score includes all domains):
@@ -2469,8 +2469,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10155.13
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10462.92
 //
 Query:       cd04762  [M=222]
 Scores for complete sequences (score includes all domains):
@@ -2497,7 +2497,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7282.99
+# Mc/sec: 7557.45
 //
 Query:       cd05481  [M=1356]
 Scores for complete sequences (score includes all domains):
@@ -2523,8 +2523,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 13171.83
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13311.13
 //
 Query:       cd05482  [M=1975]
 Scores for complete sequences (score includes all domains):
@@ -2550,8 +2550,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 14497.68
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14442.59
 //
 Query:       cd06094  [M=1262]
 Scores for complete sequences (score includes all domains):
@@ -2577,8 +2577,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12604.37
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12306.28
 //
 Query:       cd06095  [M=1271]
 Scores for complete sequences (score includes all domains):
@@ -2604,8 +2604,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 11708.26
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12007.13
 //
 Query:       cd16389  [M=200]
 Scores for complete sequences (score includes all domains):
@@ -2632,7 +2632,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8122.89
+# Mc/sec: 7944.28
 //
 Query:       cd16390  [M=1362]
 Scores for complete sequences (score includes all domains):
@@ -2658,8 +2658,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12408.53
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12805.08
 //
 Query:       cd16394  [M=335]
 Scores for complete sequences (score includes all domains):
@@ -2686,7 +2686,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8560.81
+# Mc/sec: 9237.85
 //
 Query:       cd16395  [M=2193]
 Scores for complete sequences (score includes all domains):
@@ -2713,7 +2713,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12944.34
+# Mc/sec: 12903.05
 //
 Query:       cd16398  [M=372]
 Scores for complete sequences (score includes all domains):
@@ -2740,7 +2740,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9118.35
+# Mc/sec: 9359.29
 //
 Query:       cd16405  [M=335]
 Scores for complete sequences (score includes all domains):
@@ -2767,7 +2767,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8681.22
+# Mc/sec: 8376.34
 //
 Query:       cd16407  [M=487]
 Scores for complete sequences (score includes all domains):
@@ -2794,7 +2794,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10295.91
+# Mc/sec: 11072.32
 //
 Query:       cd16411  [M=713]
 Scores for complete sequences (score includes all domains):
@@ -2820,8 +2820,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9644.36
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9309.82
 //
 Query:       cd16412  [M=983]
 Scores for complete sequences (score includes all domains):
@@ -2847,8 +2847,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9063.65
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9136.92
 //
 Query:       cd16414  [M=408]
 Scores for complete sequences (score includes all domains):
@@ -2875,7 +2875,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10838.62
+# Mc/sec: 11165.37
 //
 Query:       cd16844  [M=447]
 Scores for complete sequences (score includes all domains):
@@ -2902,7 +2902,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11416.01
+# Mc/sec: 11238.33
 //
 Query:       cd18728  [M=1900]
 Scores for complete sequences (score includes all domains):
@@ -2929,7 +2929,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 11419.56
+# Mc/sec: 10896.80
 //
 Query:       cd18970  [M=1609]
 Scores for complete sequences (score includes all domains):
@@ -2956,7 +2956,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12640.94
+# Mc/sec: 12360.22
 //
 Query:       cd18971  [M=1398]
 Scores for complete sequences (score includes all domains):
@@ -2983,7 +2983,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12567.52
+# Mc/sec: 12962.65
 //
 Query:       cd18974  [M=1621]
 Scores for complete sequences (score includes all domains):
@@ -3010,7 +3010,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 7782.56
+# Mc/sec: 7745.09
 //
 Query:       cd18978  [M=1732]
 Scores for complete sequences (score includes all domains):
@@ -3037,7 +3037,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 13196.36
+# Mc/sec: 13324.82
 //
 Query:       pfam00552  [M=1467]
 Scores for complete sequences (score includes all domains):
@@ -3063,8 +3063,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12916.59
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12844.32
 //
 Query:       pfam00589  [M=402]
 Scores for complete sequences (score includes all domains):
@@ -3091,7 +3091,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7701.90
+# Mc/sec: 7830.43
 //
 Query:       pfam01526  [M=995]
 Scores for complete sequences (score includes all domains):
@@ -3118,7 +3118,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 10908.95
+# Mc/sec: 10713.79
 //
 Query:       pfam01527  [M=130]
 Scores for complete sequences (score includes all domains):
@@ -3145,7 +3145,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 4794.75
+# Mc/sec: 4948.68
 //
 Query:       pfam01548  [M=399]
 Scores for complete sequences (score includes all domains):
@@ -3172,7 +3172,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9592.03
+# Mc/sec: 9914.33
 //
 Query:       pfam01610  [M=412]
 Scores for complete sequences (score includes all domains):
@@ -3198,8 +3198,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10400.87
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10697.82
 //
 Query:       pfam01656  [M=1028]
 Scores for complete sequences (score includes all domains):
@@ -3226,7 +3226,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12841.12
+# Mc/sec: 12490.90
 //
 Query:       pfam01710  [M=123]
 Scores for complete sequences (score includes all domains):
@@ -3252,8 +3252,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 5558.53
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5482.77
 //
 Query:       pfam02316  [M=661]
 Scores for complete sequences (score includes all domains):
@@ -3280,7 +3280,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9897.77
+# Mc/sec: 10347.95
 //
 Query:       pfam02661  [M=698]
 Scores for complete sequences (score includes all domains):
@@ -3307,7 +3307,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10767.74
+# Mc/sec: 10676.32
 //
 Query:       pfam02899  [M=301]
 Scores for complete sequences (score includes all domains):
@@ -3334,7 +3334,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7793.65
+# Mc/sec: 7720.72
 //
 Query:       pfam02914  [M=685]
 Scores for complete sequences (score includes all domains):
@@ -3360,8 +3360,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12390.54
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 11844.84
 //
 Query:       pfam02920  [M=406]
 Scores for complete sequences (score includes all domains):
@@ -3388,7 +3388,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10471.07
+# Mc/sec: 9839.21
 //
 Query:       pfam03050  [M=511]
 Scores for complete sequences (score includes all domains):
@@ -3415,7 +3415,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 7719.01
+# Mc/sec: 7519.49
 //
 Query:       pfam03400  [M=150]
 Scores for complete sequences (score includes all domains):
@@ -3442,7 +3442,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6672.42
+# Mc/sec: 6640.21
 //
 Query:       pfam04606  [M=536]
 Scores for complete sequences (score includes all domains):
@@ -3469,7 +3469,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8966.81
+# Mc/sec: 8953.45
 //
 Query:       pfam04754  [M=310]
 Scores for complete sequences (score includes all domains):
@@ -3496,7 +3496,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 8112.11
+# Mc/sec: 8141.92
 //
 Query:       pfam04855  [M=2016]
 Scores for complete sequences (score includes all domains):
@@ -3523,7 +3523,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 7477.90
+# Mc/sec: 7335.85
 //
 Query:       pfam05269  [M=97]
 Scores for complete sequences (score includes all domains):
@@ -3550,7 +3550,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 3939.44
+# Mc/sec: 4432.34
 //
 Query:       pfam05598  [M=471]
 Scores for complete sequences (score includes all domains):
@@ -3577,7 +3577,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8688.17
+# Mc/sec: 8720.04
 //
 Query:       pfam06199  [M=143]
 Scores for complete sequences (score includes all domains):
@@ -3604,7 +3604,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6525.87
+# Mc/sec: 6438.49
 //
 Query:       pfam06291  [M=97]
 Scores for complete sequences (score includes all domains):
@@ -3630,8 +3630,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 4715.92
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4648.94
 //
 Query:       pfam06316  [M=199]
 Scores for complete sequences (score includes all domains):
@@ -3658,7 +3658,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6632.91
+# Mc/sec: 6706.00
 //
 Query:       pfam06806  [M=83]
 Scores for complete sequences (score includes all domains):
@@ -3685,7 +3685,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 3903.47
+# Mc/sec: 4220.33
 //
 Query:       pfam07022  [M=194]
 Scores for complete sequences (score includes all domains):
@@ -3712,7 +3712,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7084.02
+# Mc/sec: 6816.81
 //
 Query:       pfam07282  [M=402]
 Scores for complete sequences (score includes all domains):
@@ -3738,8 +3738,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8351.08
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7943.16
 //
 Query:       pfam07508  [M=542]
 Scores for complete sequences (score includes all domains):
@@ -3766,7 +3766,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8520.38
+# Mc/sec: 8495.71
 //
 Query:       pfam07592  [M=406]
 Scores for complete sequences (score includes all domains):
@@ -3793,7 +3793,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8543.24
+# Mc/sec: 8625.52
 //
 Query:       pfam07825  [M=72]
 Scores for complete sequences (score includes all domains):
@@ -3819,8 +3819,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 2718.44
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3627.21
 //
 Query:       pfam08775  [M=326]
 Scores for complete sequences (score includes all domains):
@@ -3847,7 +3847,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7310.89
+# Mc/sec: 7990.86
 //
 Query:       pfam08857  [M=362]
 Scores for complete sequences (score includes all domains):
@@ -3874,7 +3874,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9444.70
+# Mc/sec: 9463.85
 //
 Query:       pfam09003  [M=369]
 Scores for complete sequences (score includes all domains):
@@ -3901,7 +3901,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 8917.95
+# Mc/sec: 9060.27
 //
 Query:       pfam09121  [M=3144]
 Scores for complete sequences (score includes all domains):
@@ -3928,7 +3928,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 10993.83
+# Mc/sec: 10833.58
 //
 Query:       pfam09140  [M=278]
 Scores for complete sequences (score includes all domains):
@@ -3954,8 +3954,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8217.52
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8050.98
 //
 Query:       pfam09588  [M=922]
 Scores for complete sequences (score includes all domains):
@@ -3982,7 +3982,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12228.41
+# Mc/sec: 12057.94
 //
 Query:       pfam09669  [M=291]
 Scores for complete sequences (score includes all domains):
@@ -4008,8 +4008,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9217.88
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8535.56
 //
 Query:       pfam09684  [M=214]
 Scores for complete sequences (score includes all domains):
@@ -4036,7 +4036,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6270.93
+# Mc/sec: 6111.47
 //
 Query:       pfam09956  [M=349]
 Scores for complete sequences (score includes all domains):
@@ -4063,7 +4063,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9186.80
+# Mc/sec: 9456.26
 //
 Query:       pfam10539  [M=2010]
 Scores for complete sequences (score includes all domains):
@@ -4089,8 +4089,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.00
-# Mc/sec: 14279.74
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 14227.36
 //
 Query:       pfam10743  [M=94]
 Scores for complete sequences (score includes all domains):
@@ -4117,7 +4117,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 4499.21
+# Mc/sec: 4234.18
 //
 Query:       pfam11372  [M=67]
 Scores for complete sequences (score includes all domains):
@@ -4144,7 +4144,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 3930.92
+# Mc/sec: 3892.34
 //
 Query:       pfam11646  [M=474]
 Scores for complete sequences (score includes all domains):
@@ -4171,7 +4171,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8343.81
+# Mc/sec: 8377.45
 //
 Query:       pfam12167  [M=401]
 Scores for complete sequences (score includes all domains):
@@ -4197,8 +4197,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9878.38
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10310.21
 //
 Query:       pfam12323  [M=390]
 Scores for complete sequences (score includes all domains):
@@ -4225,7 +4225,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7743.93
+# Mc/sec: 8148.95
 //
 Query:       pfam12596  [M=799]
 Scores for complete sequences (score includes all domains):
@@ -4251,8 +4251,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 11711.26
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12167.24
 //
 Query:       pfam12713  [M=281]
 Scores for complete sequences (score includes all domains):
@@ -4279,7 +4279,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6954.27
+# Mc/sec: 7393.10
 //
 Query:       pfam12762  [M=327]
 Scores for complete sequences (score includes all domains):
@@ -4306,7 +4306,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7773.71
+# Mc/sec: 7869.10
 //
 Query:       pfam12784  [M=287]
 Scores for complete sequences (score includes all domains):
@@ -4332,8 +4332,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9632.45
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9559.02
 //
 Query:       pfam12835  [M=295]
 Scores for complete sequences (score includes all domains):
@@ -4360,7 +4360,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8242.50
+# Mc/sec: 8487.89
 //
 Query:       pfam13005  [M=514]
 Scores for complete sequences (score includes all domains):
@@ -4386,8 +4386,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7938.80
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8414.65
 //
 Query:       pfam13009  [M=1060]
 Scores for complete sequences (score includes all domains):
@@ -4414,7 +4414,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11267.91
+# Mc/sec: 11266.23
 //
 Query:       pfam13011  [M=321]
 Scores for complete sequences (score includes all domains):
@@ -4440,8 +4440,8 @@ Passed Vit filter:                         3  (0.00645161); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 7488.56
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7772.15
 //
 Query:       pfam13022  [M=140]
 Scores for complete sequences (score includes all domains):
@@ -4468,7 +4468,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7183.31
+# Mc/sec: 6413.02
 //
 Query:       pfam13102  [M=398]
 Scores for complete sequences (score includes all domains):
@@ -4495,7 +4495,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11130.95
+# Mc/sec: 11415.60
 //
 Query:       pfam13333  [M=217]
 Scores for complete sequences (score includes all domains):
@@ -4522,7 +4522,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8490.42
+# Mc/sec: 7280.94
 //
 Query:       pfam13340  [M=791]
 Scores for complete sequences (score includes all domains):
@@ -4549,7 +4549,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12034.22
+# Mc/sec: 12723.01
 //
 Query:       pfam13356  [M=458]
 Scores for complete sequences (score includes all domains):
@@ -4575,8 +4575,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9269.25
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9911.68
 //
 Query:       pfam13358  [M=348]
 Scores for complete sequences (score includes all domains):
@@ -4603,7 +4603,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9812.24
+# Mc/sec: 9604.29
 //
 Query:       pfam13408  [M=1234]
 Scores for complete sequences (score includes all domains):
@@ -4630,7 +4630,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12990.42
+# Mc/sec: 12979.07
 //
 Query:       pfam13495  [M=510]
 Scores for complete sequences (score includes all domains):
@@ -4657,7 +4657,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10024.45
+# Mc/sec: 9583.15
 //
 Query:       pfam13518  [M=603]
 Scores for complete sequences (score includes all domains):
@@ -4683,8 +4683,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 8006.45
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8060.70
 //
 Query:       pfam13542  [M=415]
 Scores for complete sequences (score includes all domains):
@@ -4711,7 +4711,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 7935.69
+# Mc/sec: 8400.56
 //
 Query:       pfam13610  [M=350]
 Scores for complete sequences (score includes all domains):
@@ -4738,7 +4738,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10289.91
+# Mc/sec: 10332.13
 //
 Query:       pfam13613  [M=531]
 Scores for complete sequences (score includes all domains):
@@ -4765,7 +4765,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11053.71
+# Mc/sec: 11440.38
 //
 Query:       pfam13683  [M=322]
 Scores for complete sequences (score includes all domains):
@@ -4792,7 +4792,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8130.54
+# Mc/sec: 8336.02
 //
 Query:       pfam13700  [M=999]
 Scores for complete sequences (score includes all domains):
@@ -4819,7 +4819,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12748.26
+# Mc/sec: 12535.04
 //
 Query:       pfam13737  [M=310]
 Scores for complete sequences (score includes all domains):
@@ -4845,8 +4845,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 6960.51
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5276.89
 //
 Query:       pfam13751  [M=528]
 Scores for complete sequences (score includes all domains):
@@ -4873,7 +4873,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9988.98
+# Mc/sec: 9900.92
 //
 Query:       pfam13843  [M=2657]
 Scores for complete sequences (score includes all domains):
@@ -4899,8 +4899,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 13692.39
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11180.96
 //
 Query:       pfam13976  [M=2380]
 Scores for complete sequences (score includes all domains):
@@ -4927,7 +4927,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 11540.07
+# Mc/sec: 10481.74
 //
 Query:       pfam14319  [M=464]
 Scores for complete sequences (score includes all domains):
@@ -4953,8 +4953,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9622.05
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9613.20
 //
 Query:       pfam14372  [M=1122]
 Scores for complete sequences (score includes all domains):
@@ -4981,7 +4981,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 13651.43
+# Mc/sec: 6131.96
 //
 Query:       pfam14549  [M=64]
 Scores for complete sequences (score includes all domains):
@@ -5008,7 +5008,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 3329.46
+# Mc/sec: 885.92
 //
 Query:       pfam14657  [M=374]
 Scores for complete sequences (score includes all domains):
@@ -5035,7 +5035,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11012.49
+# Mc/sec: 4408.83
 //
 Query:       pfam14659  [M=376]
 Scores for complete sequences (score includes all domains):
@@ -5062,7 +5062,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9611.54
+# Mc/sec: 9985.56
 //
 Query:       pfam14690  [M=432]
 Scores for complete sequences (score includes all domains):
@@ -5088,8 +5088,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10102.42
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7952.48
 //
 Query:       pfam14706  [M=467]
 Scores for complete sequences (score includes all domains):
@@ -5115,8 +5115,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9266.20
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9702.64
 //
 Query:       pfam16795  [M=294]
 Scores for complete sequences (score includes all domains):
@@ -5143,7 +5143,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 8798.78
+# Mc/sec: 8915.72
 //
 Query:       pfam17241  [M=822]
 Scores for complete sequences (score includes all domains):
@@ -5169,8 +5169,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 11505.12
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11412.56
 //
 Query:       pfam17463  [M=72]
 Scores for complete sequences (score includes all domains):
@@ -5197,7 +5197,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 4023.81
+# Mc/sec: 4396.73
 //
 Query:       pfam17762  [M=569]
 Scores for complete sequences (score includes all domains):
@@ -5223,8 +5223,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10910.24
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 11182.78
 //
 Query:       pfam17921  [M=6124]
 Scores for complete sequences (score includes all domains):
@@ -5251,7 +5251,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
-# Mc/sec: 13628.32
+# Mc/sec: 13480.71
 //
 Query:       pfam18090  [M=392]
 Scores for complete sequences (score includes all domains):
@@ -5278,7 +5278,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 9679.88
+# Mc/sec: 10506.22
 //
 Query:       pfam18103  [M=1146]
 Scores for complete sequences (score includes all domains):
@@ -5304,8 +5304,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 10852.00
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10902.66
 //
 Query:       pfam18607  [M=402]
 Scores for complete sequences (score includes all domains):
@@ -5332,7 +5332,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 11097.84
+# Mc/sec: 10880.96
 //
 Query:       pfam18697  [M=1219]
 Scores for complete sequences (score includes all domains):
@@ -5359,7 +5359,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12359.68
+# Mc/sec: 13185.64
 //
 Query:       pfam18717  [M=981]
 Scores for complete sequences (score includes all domains):
@@ -5385,8 +5385,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 12350.03
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12805.45
 //
 Query:       pfam18718  [M=1523]
 Scores for complete sequences (score includes all domains):
@@ -5413,7 +5413,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9662.91
+# Mc/sec: 9845.95
 //
 Query:       pfam18758  [M=1946]
 Scores for complete sequences (score includes all domains):
@@ -5439,8 +5439,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 9670.56
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.00
+# Mc/sec: 9653.85
 //
 Query:       pfam18759  [M=1697]
 Scores for complete sequences (score includes all domains):
@@ -5466,8 +5466,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 12806.76
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12908.64
 //
 Query:       pfam18763  [M=3737]
 Scores for complete sequences (score includes all domains):
@@ -5493,8 +5493,8 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
-# Mc/sec: 9597.14
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11249.46
 //
 Query:       pfam18803  [M=1127]
 Scores for complete sequences (score includes all domains):
@@ -5521,7 +5521,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 3373.49
+# Mc/sec: 3374.58
 //
 Query:       pfam18804  [M=1873]
 Scores for complete sequences (score includes all domains):
@@ -5548,7 +5548,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 13565.03
+# Mc/sec: 13751.95
 //
 Query:       pfam18866  [M=197]
 Scores for complete sequences (score includes all domains):
@@ -5575,7 +5575,7 @@ Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 5983.28
+# Mc/sec: 5888.71
 //
 Query:       smart00674  [M=1409]
 Scores for complete sequences (score includes all domains):
@@ -5601,7 +5601,7 @@ Passed Vit filter:                         0  (0); expected 0.5 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
 Initial search space (Z):                465  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 10807.10
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11416.98
 //
 [ok]
