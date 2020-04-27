@@ -15,8 +15,6 @@ TODO:
     Allow for existing amino acid file input (rather than 6frame)
 """
 
-
-
 SKLEARN_CLASSIFIER = pkg_resources.resource_filename('bacphlip', 'data/rf_best.joblib')
 HMMER_DB = pkg_resources.resource_filename('bacphlip', 'data/prot_models.hmm')
 
@@ -59,11 +57,11 @@ def check_genome_fasta_reqs(nt_records):
     if len(nt_records) == 1:
         nt_record = nt_records[0]
     elif len(nt_records) == 0:
-        raise Exception('Input fasta file appears to be empty. "
-                "Ensure that the file contains what you think it does.')
+        raise Exception("Input fasta file appears to be empty. "
+                "Ensure that the file contains what you think it does.")
     else:
-        raise Exception('Input fasta file appears to contain more than one sequence record. "
-                "Currently bacphlip only supports single contig inputs.')
+        raise Exception("Input fasta file appears to contain more than one sequence record. "
+                "Currently bacphlip only supports single contig inputs.")
     return nt_record
 
 def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False):
@@ -100,7 +98,7 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
         tempy = nt_record.reverse_complement()[i+modulo:].translate()
         seq = str(tempy.seq).split('*')
         for j in seq:
-            if len(j) >= min_prot_length:
+            if len(j) >= MIN_PROT_LENGTH:
                 prots.append(j)
     ###Write the results
     with open(output_file_path, 'w') as outfile:
@@ -194,7 +192,7 @@ def main():
     ### 
     six_frame_file = args.input_file + '.6frame'
     hmmsearch_file = args.input_file + '.hmmsearch'
-    hmmsearch_df = args.input_file + 'hmmsearch.tsv'
+    hmmsearch_df = args.input_file + '.hmmsearch.tsv'
     predictions_file = args.input_file + '.bacphlip'
     ###
     six_frame_translate(args.input_file, six_frame_file, force_overwrite=args.force_overwrite)
