@@ -4,7 +4,8 @@ import setuptools
 INSTALL_REQUIRES=[
         "biopython>=1.7", 
         "pandas>=0.25",
-        "joblib>=0.13"
+        "joblib>=0.13",
+        "scikit-learn>=0.21"
         ]
 
 #TEST_REQUIRES = [
