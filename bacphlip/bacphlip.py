@@ -8,11 +8,12 @@ import joblib
 
 """
 TODO:
-    Check that input fastas are DNA
-    Check that hmmsearch inputs are amino acids
-    Check for suspicious genome lengths
+    Check that input fastas are DNA and output is amino acids
+    Check for suspiciously short/long genome lengths
     Allow for batch input (one fasta per line)
     Allow for existing amino acid file input (rather than 6frame)
+    Allow for multi-contig input files
+    Allow for custom hmmsearch
 """
 
 SKLEARN_CLASSIFIER = pkg_resources.resource_filename('bacphlip', 'data/rf_best.joblib')
@@ -106,7 +107,7 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
             outfile.write('>{}_{}\n{}\n'.format(genome_id, i, seq))
     return    
 
-def hmmsearch_py(aa_fasta_file, hmmsearch_out, force_overwrite=False):
+def hmmsearch_py(aa_fasta_file, hmmsearch_out, force_overwrite=False, local_hmmsearch=False):
     """
     Runs hmmsearch on an amino acid fasta file against a pre-compiled database of protein domains
     of interest. 
@@ -120,8 +121,20 @@ def hmmsearch_py(aa_fasta_file, hmmsearch_out, force_overwrite=False):
     check_existing_file(aa_fasta_file)
     if not force_overwrite:
         check_nonexisting_file(hmmsearch_out)
+    #
+    hmmsearch_call = "hmmsearch"
+    if local_hmmsearch:
+        if not os.path.exists(local_hmmsearch):
+            raise Exception("You specified a local hmmsearch install (path={}) but this file does not appear to exist.".format(local_hmmsearch))
+        hmmsearch_call = local_hmmsearch
+    #
     with open(hmmsearch_out, 'w') as outfile:
-        subprocess.run(args=["hmmsearch", HMMER_DB, aa_fasta_file], check=True, stdout=outfile)
+        try:
+            subprocess.run(args=[hmmsearch_call, HMMER_DB, aa_fasta_file], check=True, stdout=outfile)
+        except subprocess.CalledProcessError as e:
+            raise Exception("System call to outside program \"hmmsearch\" failed. Please ensure that you have hmmsearch 3.x "\
+            "or greater properly installed. BACPHLIP assumes by default that the install is available in the system path but "\
+            "local installs can be supplied with the \"--local_hmmsearch\" flag followed by the path to a local hmmsearch.") from e
     return
 
 def process_hmmsearch(hmmsearch_file, hmmsearch_df_out, force_overwrite=False):
@@ -178,16 +191,19 @@ def predict_lifestyle(hmmsearch_df, predictions_out, force_overwrite=False):
 
 def main(args):
     """
-    Command-line implementation of the full prediction pipeline. Currently implemented only for single genome
+    Command-line implementation of the full BACPHLIP prediction pipeline. Currently implemented only for single genome
     inputs but lots of time could be saved during the classifier prediction step by implementing a batch option.
     """
     import argparse 
     ###Command line arguments    
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input_file",\
-            required=True, help="Should be a valid path to a single genome (nucleotide) fasta file containing only 1 record/contig.")
+            required=True, help="Should be a valid path to a single genome (nucleotide) FASTA file containing only 1 record/contig.")
     parser.add_argument("-f", "--force_overwrite", action="store_true",\
             help="Whether to overwrite all existing files that will be created if they exist. Default is False")
+    parser.add_argument("--local_hmmsearch", default=False,\
+            help="By default, BACPHLIP assumes a system install of \"hmmsearch\". Use this flag with a custom path"
+                    "to a local install of hmmsearch if necessary.")
     args = parser.parse_args(args)    
     ### 
     six_frame_file = args.input_file + '.6frame'
@@ -196,7 +212,7 @@ def main(args):
     predictions_file = args.input_file + '.bacphlip'
     ###
     six_frame_translate(args.input_file, six_frame_file, force_overwrite=args.force_overwrite)
-    hmmsearch_py(six_frame_file, hmmsearch_file, force_overwrite=args.force_overwrite)
+    hmmsearch_py(six_frame_file, hmmsearch_file, force_overwrite=args.force_overwrite, local_hmmsearch=args.local_hmmsearch)
     process_hmmsearch(hmmsearch_file, hmmsearch_df, force_overwrite=args.force_overwrite)
     predict_lifestyle(hmmsearch_df, predictions_file, force_overwrite=args.force_overwrite)
     
