@@ -9,6 +9,7 @@ before_install:
   - pip install -U pip
   - pip install -U pytest
   - pip install codecov
+  - apt install hmmer
 install:
   - pip install -e . # install package
 # command to run tests

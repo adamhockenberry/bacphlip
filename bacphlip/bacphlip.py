@@ -87,8 +87,12 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
     prots = []
     for i in [0, 1, 2]:###Each of the three reading frames
         modulo = len(nt_record[i:])%3
+        assert modulo < 3
         ###Translate the regular strand
-        tempy = nt_record[i+modulo:].translate()
+        if modulo > 0:
+            tempy = nt_record[i:-modulo].translate()
+        else:
+            tempy = nt_record[i:].translate()
         ###Split according to stop codons
         seq = str(tempy.seq).split('*')
         ###Append the sequences if they are longer than the defined minimum
@@ -96,7 +100,10 @@ def six_frame_translate(fasta_file_path, output_file_path, force_overwrite=False
             if len(j) >= MIN_PROT_LENGTH:
                 prots.append(j)
         ###Repeat for the reverse complement
-        tempy = nt_record.reverse_complement()[i+modulo:].translate()
+        if modulo > 0:
+            tempy = nt_record.reverse_complement()[i:-modulo].translate()
+        else:
+            tempy = nt_record.reverse_complement()[i:].translate()
         seq = str(tempy.seq).split('*')
         for j in seq:
             if len(j) >= MIN_PROT_LENGTH:
@@ -160,6 +167,7 @@ def process_hmmsearch(hmmsearch_file, hmmsearch_df_out, force_overwrite=False):
                 simple_res.append((i.id, 0))
     if len(simple_res) != TOTAL_PROTEIN_MODELS:
         raise Exception('Appears to be an error, too many or too few results given expected number of protein models tested.')
+    simple_res = sorted(simple_res, key=lambda x: x[0])
     single_df = pd.DataFrame(OrderedDict(simple_res), index=[0])
     single_df.to_csv(hmmsearch_df_out, sep='\t')
     return
@@ -202,7 +210,7 @@ def main(args):
     parser.add_argument("-f", "--force_overwrite", action="store_true",\
             help="Whether to overwrite all existing files that will be created if they exist. Default is False")
     parser.add_argument("--local_hmmsearch", default=False,\
-            help="By default, BACPHLIP assumes a system install of \"hmmsearch\". Use this flag with a custom path"
+            help="By default, BACPHLIP assumes a system install of \"hmmsearch\". Use this flag to provide a custom path "
                     "to a local install of hmmsearch if necessary.")
     args = parser.parse_args(args)    
     ### 
@@ -211,10 +219,19 @@ def main(args):
     hmmsearch_df = args.input_file + '.hmmsearch.tsv'
     predictions_file = args.input_file + '.bacphlip'
     ###
+    print('Beginning BACPHLIP pipeline')
+    print('#')
     six_frame_translate(args.input_file, six_frame_file, force_overwrite=args.force_overwrite)
+    print('Finished six frame translation of genome (nucleotide) input file {} with output stored in {}'.format(args.input_file, six_frame_file))
+    print('#')
     hmmsearch_py(six_frame_file, hmmsearch_file, force_overwrite=args.force_overwrite, local_hmmsearch=args.local_hmmsearch)
+    print('Finished outside call to hmmsearch on {} with output stored in {}'.format(six_frame_file, hmmsearch_file))
+    print('#')
     process_hmmsearch(hmmsearch_file, hmmsearch_df, force_overwrite=args.force_overwrite)
+    print('Finished converting hmmsearch output {} with output stored in {}'.format(hmmsearch_file, hmmsearch_df))
+    print('#')
     predict_lifestyle(hmmsearch_df, predictions_file, force_overwrite=args.force_overwrite)
+    print('Finished with BACPHLIP predictions from input file {}! Final output file stored in {}'.format(hmmsearch_df, predictions_file))
     
 
 if __name__ == '__main__':
