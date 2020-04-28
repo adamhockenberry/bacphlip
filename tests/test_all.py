@@ -4,8 +4,6 @@ import bacphlip
 import os
 import filecmp
 
-
-
 def test_example_files():
     import pkg_resources
     file_dict = {}
@@ -33,6 +31,14 @@ def test_translate(tmp_path):
     bacphlip.six_frame_translate(file_dict['genome_example.fasta'], tmp_six_frame_path)
     assert (os.path.exists(tmp_six_frame_path) == True) and (os.path.getsize(tmp_six_frame_path) != 0)
     filecmp.cmp(file_dict['genome_example.fasta.6frame'], tmp_six_frame_path, shallow=False)
+
+def test_hmmsearch(tmp_path):
+    file_dict = test_example_files()
+    tmp_hmmsearch_out = tmp_path / 'tempy.fasta.hmmsearch' 
+    assert os.path.exists(tmp_hmmsearch_out) == False
+    bacphlip.hmmsearch_py(file_dict['genome_example.fasta.6frame'], tmp_hmmsearch_out)
+    assert (os.path.exists(tmp_hmmsearch_out) == True) and (os.path.getsize(tmp_hmmsearch_out) != 0)
+    filecmp.cmp(file_dict['genome_example.fasta.hmmsearch'], tmp_hmmsearch_out, shallow=False)
 
 def test_process_hmmsearch(tmp_path):
     file_dict = test_example_files()
