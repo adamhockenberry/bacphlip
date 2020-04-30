@@ -1,9 +1,10 @@
 # BACPHLIP - a bacteriophage lifestyle prediction tool
 
 *Adam J. Hockenberry and Claus O. Wilke*
-[![Build Status](https://travis-ci.com/adamhockenberry/bacphlip.svg?branch=master)](https://travis-ci.com/adamhockenberry/bacphlip)
+[![Build Status](https://travis-ci.com/adamhockenberry/bacphlip-py.svg?branch=master)](https://travis-ci.com/adamhockenberry/bacphlip-py)
 
 **Reference:**
+
 (eventual manuscript reference here)
 
 ## Installation
