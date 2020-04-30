@@ -5,6 +5,7 @@ import subprocess
 import pandas as pd
 from collections import OrderedDict
 import joblib
+import sys
 
 """
 TODO:
@@ -197,43 +198,27 @@ def predict_lifestyle(hmmsearch_df, predictions_out, force_overwrite=False):
 
 
 
-def main(args):
+def run_pipeline(input_file_path, force_overwrite=False, local_hmmsearch=False):
     """
     Command-line implementation of the full BACPHLIP prediction pipeline. Currently implemented only for single genome
     inputs but lots of time could be saved during the classifier prediction step by implementing a batch option.
     """
-    import argparse 
-    ###Command line arguments    
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--input_file",\
-            required=True, help="Should be a valid path to a single genome (nucleotide) FASTA file containing only 1 record/contig.")
-    parser.add_argument("-f", "--force_overwrite", action="store_true",\
-            help="Whether to overwrite all existing files that will be created if they exist. Default is False")
-    parser.add_argument("--local_hmmsearch", default=False,\
-            help="By default, BACPHLIP assumes a system install of \"hmmsearch\". Use this flag to provide a custom path "
-                    "to a local install of hmmsearch if necessary.")
-    args = parser.parse_args(args)    
     ### 
-    six_frame_file = args.input_file + '.6frame'
-    hmmsearch_file = args.input_file + '.hmmsearch'
-    hmmsearch_df = args.input_file + '.hmmsearch.tsv'
-    predictions_file = args.input_file + '.bacphlip'
+    six_frame_file = input_file_path + '.6frame'
+    hmmsearch_file = input_file_path + '.hmmsearch'
+    hmmsearch_df = input_file_path + '.hmmsearch.tsv'
+    predictions_file = input_file_path + '.bacphlip'
     ###
+    print('#################################################################################')
     print('Beginning BACPHLIP pipeline')
-    print('#')
-    six_frame_translate(args.input_file, six_frame_file, force_overwrite=args.force_overwrite)
-    print('Finished six frame translation of genome (nucleotide) input file {} with output stored in {}'.format(args.input_file, six_frame_file))
-    print('#')
-    hmmsearch_py(six_frame_file, hmmsearch_file, force_overwrite=args.force_overwrite, local_hmmsearch=args.local_hmmsearch)
-    print('Finished outside call to hmmsearch on {} with output stored in {}'.format(six_frame_file, hmmsearch_file))
-    print('#')
-    process_hmmsearch(hmmsearch_file, hmmsearch_df, force_overwrite=args.force_overwrite)
-    print('Finished converting hmmsearch output {} with output stored in {}'.format(hmmsearch_file, hmmsearch_df))
-    print('#')
-    predict_lifestyle(hmmsearch_df, predictions_file, force_overwrite=args.force_overwrite)
-    print('Finished with BACPHLIP predictions from input file {}! Final output file stored in {}'.format(hmmsearch_df, predictions_file))
+    six_frame_translate(input_file_path, six_frame_file, force_overwrite=force_overwrite)
+    print('Finished six frame translation of genome (nucleotide) with output stored in {}'.format(six_frame_file))
+    hmmsearch_py(six_frame_file, hmmsearch_file, force_overwrite=force_overwrite, local_hmmsearch=local_hmmsearch)
+    print('Finished outside call to hmmsearch with output stored in {}'.format(hmmsearch_file))
+    process_hmmsearch(hmmsearch_file, hmmsearch_df, force_overwrite=force_overwrite)
+    print('Finished converting hmmsearch with output stored in {}'.format(hmmsearch_df))
+    predict_lifestyle(hmmsearch_df, predictions_file, force_overwrite=force_overwrite)
+    print('Finished with BACPHLIP predictions! Final output file stored in {}'.format(predictions_file))
+    print('#################################################################################')
     
 
-if __name__ == '__main__':
-    import sys
-    main(sys.argv[1:])

@@ -8,24 +8,14 @@ INSTALL_REQUIRES=[
         "scikit-learn>=0.21"
         ]
 
-#TEST_REQUIRES = [
-#    # testing and coverage
-#    "pytest",
-#    "coverage",
-#    "pytest-cov",
-#    # to be able to run `python setup.py checkdocs`
-#    "collective.checkdocs",
-#    "pygments",
-#]
-
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 with open("bacphlip/__init__.py", "r") as f:
     init = f.readlines()
-for line in init:
-    if "__version__" in line:
-        __version__ = line.split('=')[-1]
+    for line in init:
+        if "__version__" in line:
+            __version__ = line.split('=')[-1]
 
 setuptools.setup(
     name="bacphlip",
@@ -46,14 +36,3 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
 )
-
-
-"""
-setup(
-    download_url="https://github.com/clauswilke/PeptideBuilder/releases",
-    platforms="Tested on Mac OS X and Windows 10",
-    packages=["PeptideBuilder"],
-    extras_require={"test": TEST_REQUIRES + INSTALL_REQUIRES,},
-)
-
-"""

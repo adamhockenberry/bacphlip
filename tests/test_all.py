@@ -30,7 +30,7 @@ def test_translate(tmp_path):
     assert os.path.exists(tmp_six_frame_path) == False
     bacphlip.six_frame_translate(file_dict['genome_example.fasta'], tmp_six_frame_path)
     assert (os.path.exists(tmp_six_frame_path) == True) and (os.path.getsize(tmp_six_frame_path) != 0)
-    filecmp.cmp(file_dict['genome_example.fasta.6frame'], tmp_six_frame_path, shallow=False)
+    assert filecmp.cmp(file_dict['genome_example.fasta.6frame'], tmp_six_frame_path, shallow=False)
 
 def test_hmmsearch(tmp_path):
     file_dict = test_example_files()
@@ -38,7 +38,11 @@ def test_hmmsearch(tmp_path):
     assert os.path.exists(tmp_hmmsearch_out) == False
     bacphlip.hmmsearch_py(file_dict['genome_example.fasta.6frame'], tmp_hmmsearch_out)
     assert (os.path.exists(tmp_hmmsearch_out) == True) and (os.path.getsize(tmp_hmmsearch_out) != 0)
-    filecmp.cmp(file_dict['genome_example.fasta.hmmsearch'], tmp_hmmsearch_out, shallow=False)
+    with open(file_dict['genome_example.fasta.hmmsearch'], 'r') as temp:
+        lines_a = len(temp.readlines()) 
+    with open(tmp_hmmsearch_out, 'r') as temp:
+        lines_b = len(temp.readlines()) 
+    assert lines_a == lines_b
 
 def test_process_hmmsearch(tmp_path):
     file_dict = test_example_files()
@@ -46,7 +50,7 @@ def test_process_hmmsearch(tmp_path):
     assert os.path.exists(tmp_hmmsearchtsv_path) == False
     bacphlip.process_hmmsearch(file_dict['genome_example.fasta.hmmsearch'], tmp_hmmsearchtsv_path)
     assert (os.path.exists(tmp_hmmsearchtsv_path) == True) and (os.path.getsize(tmp_hmmsearchtsv_path) != 0)
-    filecmp.cmp(file_dict['genome_example.fasta.hmmsearch.tsv'], tmp_hmmsearchtsv_path, shallow=False)
+    assert filecmp.cmp(file_dict['genome_example.fasta.hmmsearch.tsv'], tmp_hmmsearchtsv_path, shallow=False)
 
 def test_bacphlip(tmp_path):
     file_dict = test_example_files()
@@ -54,7 +58,7 @@ def test_bacphlip(tmp_path):
     assert os.path.exists(tmp_bacphlip_path) == False
     bacphlip.predict_lifestyle(file_dict['genome_example.fasta.hmmsearch.tsv'], tmp_bacphlip_path)
     assert (os.path.exists(tmp_bacphlip_path) == True) and (os.path.getsize(tmp_bacphlip_path) != 0)
-    filecmp.cmp(file_dict['genome_example.fasta.bacphlip'], tmp_bacphlip_path, shallow=False)
+    assert filecmp.cmp(file_dict['genome_example.fasta.bacphlip'], tmp_bacphlip_path, shallow=False)
 
 def test_no_overwrite(tmp_path):
     file_dict = test_example_files()
