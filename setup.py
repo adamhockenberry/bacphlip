@@ -26,7 +26,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=INSTALL_REQUIRES,
-    url="https://github.com/adamhockenberry/bacphlip-py",
+    url="https://github.com/adamhockenberry/bacphlip",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
