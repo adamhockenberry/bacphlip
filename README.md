@@ -38,7 +38,7 @@ python -m bacphlip -i /valid/path/to/a/genome.fasta -f
 
 Finally, a path to a local HMMER3 install (specifically, the `hmmsearch` tool) can be specified in the command line:
 ```
-python -m bacphlip -i /valid/path/to/a/genome.fasta --local_hmmer /valid/path/to/hmmsearch
+python -m bacphlip -i /valid/path/to/a/genome.fasta --local_hmmsearch /valid/path/to/hmmsearch
 ```
 
 

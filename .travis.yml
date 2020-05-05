@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get -y install hmmer
   - python --version
   - pip install -U pip
-  - pip install -U pytest
+  - pip install -U pytest coverage pytest-cov
   - pip install codecov
 install:
   - pip install -e . # install package
