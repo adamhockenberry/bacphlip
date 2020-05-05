@@ -3,6 +3,7 @@
 *Adam J. Hockenberry and Claus O. Wilke*
 
 [![Build Status](https://travis-ci.com/adamhockenberry/bacphlip.svg?branch=master)](https://travis-ci.com/adamhockenberry/bacphlip)
+[![Coverage Status](https://img.shields.io/codecov/c/github/adamhockenberry/bacphlip/master.svg)](https://codecov.io/github/adamhockenberry/bacphlip?branch=master)
 
 **Reference:**
 
