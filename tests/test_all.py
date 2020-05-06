@@ -24,6 +24,13 @@ def test_support_files():
     assert os.path.getsize(bacphlip.HMMER_DB) != 0    
     assert os.path.getsize(bacphlip.SKLEARN_CLASSIFIER) != 0
 
+def check_non_existent_file():
+    import pkg_resources
+    invalid_file = 'genome_example.fastaaaaaaa'
+    example_path = pkg_resources.resource_filename('bacphlip', 'data/example_data/{}'.format(invalid_file))
+    with pytest.raises(Exception):
+        bacphlip.check_existing_file(example_path)
+
 def test_translate(tmp_path):
     file_dict = test_example_files()
     tmp_six_frame_path = tmp_path / 'six_frame.fasta' 
