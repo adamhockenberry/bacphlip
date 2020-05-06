@@ -1,6 +1,6 @@
 import pytest
 import bacphlip
-
+import shutil
 import os
 import filecmp
 
@@ -30,6 +30,21 @@ def test_non_existent_file():
     example_path = pkg_resources.resource_filename('bacphlip', 'data/example_data/{}'.format(invalid_file))
     with pytest.raises(Exception):
         bacphlip.check_existing_file(example_path)
+
+def test_empty_fasta(tmp_path):
+    with open(tmp_path / 'empty.fasta', 'w') as outfile:
+        outfile.write('')
+    with pytest.raises(Exception):
+        six_frame_translate(tmp_path / 'empty.fasta', tmp_path / 'output.fa')
+
+def test_multi_fasta(tmp_path):
+    with open(tmp_path / 'multi.fasta', 'w') as outfile:
+        outfile.write('>1\n')
+        outfile.write('ATGCA\n')
+        outfile.write('>2\n')
+        outfile.write('ATGCA\n')
+    with pytest.raises(Exception):
+        six_frame_translate(tmp_path / 'multi.fasta', tmp_path / 'output.fa')
 
 def test_translate(tmp_path):
     file_dict = test_example_files()
@@ -75,3 +90,9 @@ def test_no_overwrite(tmp_path):
     assert (os.path.exists(tmp_six_frame_path) == True) and (os.path.getsize(tmp_six_frame_path) != 0)
     with pytest.raises(Exception):
         bacphlip.six_frame_translate(file_dict['genome_example.fasta'], tmp_six_frame_path)
+
+def test_pipeline(tmp_path):
+    file_dict = test_example_files()
+    shutil.copyfile(file_dict['genome_example.fasta'], tmp_path / 'genome_example.fasta')
+    bacphlip.run_pipeline(str(tmp_path / 'genome_example.fasta'))
+    assert filecmp.cmp(file_dict['genome_example.fasta.bacphlip'], tmp_path / 'genome_example.fasta.bacphlip', shallow=False)
