@@ -13,3 +13,5 @@ if __name__ == '__main__':
                     "to a local install of hmmsearch if necessary.")
     args = parser.parse_args()    
     run_pipeline(args.input_file, force_overwrite=args.force_overwrite, local_hmmsearch=args.local_hmmsearch)
+
+

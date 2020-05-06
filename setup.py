@@ -20,6 +20,8 @@ with open("bacphlip/__init__.py", "r") as f:
 
 setuptools.setup(
     name="bacphlip",
+    packages=['bacphlip'],
+    entry_points={ 'console_scripts': ['Package = bacphlip.__main__:main']}, 
     version=__version__,
     author="Adam J Hockenberry",
     author_email="adam.hockenberry@utexas.edu",

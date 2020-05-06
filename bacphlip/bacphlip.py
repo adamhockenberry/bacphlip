@@ -220,5 +220,4 @@ def run_pipeline(input_file_path, force_overwrite=False, local_hmmsearch=False):
     predict_lifestyle(hmmsearch_df, predictions_file, force_overwrite=force_overwrite)
     print('Finished with BACPHLIP predictions! Final output file stored in {}'.format(predictions_file))
     print('#################################################################################')
-    
 
