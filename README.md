@@ -2,6 +2,9 @@
 
 *Adam J. Hockenberry and Claus O. Wilke*
 
+[![PyPI version](https://badge.fury.io/py/bacphlip.svg)](https://badge.fury.io/py/bacphlip)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/bacphlip)
+![PyPI - License](https://img.shields.io/pypi/l/bacphlip)
 [![Build Status](https://travis-ci.com/adamhockenberry/bacphlip.svg?branch=master)](https://travis-ci.com/adamhockenberry/bacphlip)
 [![Coverage Status](https://img.shields.io/codecov/c/github/adamhockenberry/bacphlip/master.svg)](https://codecov.io/github/adamhockenberry/bacphlip?branch=master)
 

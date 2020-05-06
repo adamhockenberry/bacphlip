@@ -15,7 +15,8 @@ with open("bacphlip/__init__.py", "r") as f:
     init = f.readlines()
     for line in init:
         if "__version__" in line:
-            __version__ = line.split('=')[-1]
+            __version__ = line.split('"')[-2]
+            #__version__ = line.split('=')[-1].strip('"')
 
 setuptools.setup(
     name="bacphlip",
