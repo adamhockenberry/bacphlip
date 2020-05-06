@@ -27,7 +27,7 @@ Additionally, users are required to install the [HMMER3 software suite](http://h
 
 ## Examples
 
-The most straightforwad usage of BACPHLIP is as a command line tool. Assuming that `/valid/path/to/a/genome.fasta` exists, BACPHLIP can be called:
+The most straightforwad usage of BACPHLIP is as a command line tool. Assuming that `/valid/path/to/a/genome.fasta` exists, you can call BACPHLIP with the command:
 ```
 python -m bacphlip -i /valid/path/to/a/genome.fasta
 ```
