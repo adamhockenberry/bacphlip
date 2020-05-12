@@ -14,12 +14,12 @@
 
 ## Installation
 
-You can install BACPHLIP with pip (NOTE: NOT YET WORKING):
+You can install BACPHLIP with pip:
 ```
 pip install bacphlip
 ```
 
-Alternatively, users can pull/download the github repository, navigate to the directory where BACPHLIP was downloaded and run:
+Alternatively, users can pull/download the latest github repository, navigate to the directory where BACPHLIP was downloaded and run:
 ```
 pip install .
 ```
