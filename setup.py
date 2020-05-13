@@ -29,6 +29,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=INSTALL_REQUIRES,
+    include_package_data=True,
     url="https://github.com/adamhockenberry/bacphlip",
     classifiers=[
         "Programming Language :: Python :: 3",
