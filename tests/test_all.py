@@ -35,7 +35,7 @@ def test_empty_fasta(tmp_path):
     with open(tmp_path / 'empty.fasta', 'w') as outfile:
         outfile.write('')
     with pytest.raises(Exception):
-        six_frame_translate(tmp_path / 'empty.fasta', tmp_path / 'output.fa')
+        bacphlip.six_frame_translate(tmp_path / 'empty.fasta', tmp_path / 'output.fa')
 
 def test_multi_fasta(tmp_path):
     with open(tmp_path / 'multi.fasta', 'w') as outfile:
@@ -44,7 +44,7 @@ def test_multi_fasta(tmp_path):
         outfile.write('>2\n')
         outfile.write('ATGCA\n')
     with pytest.raises(Exception):
-        six_frame_translate(tmp_path / 'multi.fasta', tmp_path / 'output.fa')
+        bacphlip.six_frame_translate(tmp_path / 'multi.fasta', tmp_path / 'output.fa')
 
 def test_translate(tmp_path):
     file_dict = test_example_files()
@@ -65,6 +65,14 @@ def test_hmmsearch(tmp_path):
     with open(tmp_hmmsearch_out, 'r') as temp:
         lines_b = len(temp.readlines()) 
     assert lines_a == lines_b
+
+def test_invalid_hmmsearch(tmp_path):
+    file_dict = test_example_files()
+    tmp_hmmsearch_out = tmp_path / 'tempy.fasta.hmmsearch' 
+    invalid_hmmsearch_path = tmp_path / 'hmmsearch'
+    assert os.path.exists(tmp_hmmsearch_out) == False
+    with pytest.raises(Exception):
+        bacphlip.hmmsearch_py(file_dict['genome_example.fasta.6frame'], tmp_hmmsearch_out, local_hmmsearch=invalid_hmmsearch_path)
 
 def test_process_hmmsearch(tmp_path):
     file_dict = test_example_files()
