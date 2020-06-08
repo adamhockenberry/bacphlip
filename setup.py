@@ -5,7 +5,7 @@ INSTALL_REQUIRES=[
         "biopython>=1.7", 
         "pandas>=0.25",
         "joblib>=0.13",
-        "scikit-learn>=0.21"
+        "scikit-learn==0.23"
         ]
 
 with open("README.md", "r") as fh:
@@ -21,7 +21,7 @@ with open("bacphlip/__init__.py", "r") as f:
 setuptools.setup(
     name="bacphlip",
     packages=['bacphlip'],
-    entry_points={ 'console_scripts': ['Package = bacphlip.__main__:main']}, 
+    entry_points={ 'console_scripts': ['Package = bacphlip.__main__:main', 'bacphlip=bacphlip.command_line:main']}, 
     version=__version__,
     author="Adam J Hockenberry",
     author_email="adam.hockenberry@utexas.edu",

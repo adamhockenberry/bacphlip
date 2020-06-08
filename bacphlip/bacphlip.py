@@ -196,7 +196,18 @@ def predict_lifestyle(hmmsearch_df, predictions_out, force_overwrite=False):
         outfile.write('{}\t{}\n'.format(class_probs[0][0], class_probs[0][1]))
     return
 
-
+def parse_cmd_line_args():
+    import argparse 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", "--input_file",\
+            required=True, help="Should be a valid path to a single genome (nucleotide) FASTA file containing only 1 record/contig.")
+    parser.add_argument("-f", "--force_overwrite", action="store_true",\
+            help="Whether to overwrite all existing files that will be created if they exist. Default is False")
+    parser.add_argument("--local_hmmsearch", default=False,\
+            help="By default, BACPHLIP assumes a system install of \"hmmsearch\". Use this flag to provide a custom path "
+                    "to a local install of hmmsearch if necessary.")
+    args = parser.parse_args()    
+    return args
 
 def run_pipeline(input_file_path, force_overwrite=False, local_hmmsearch=False):
     """

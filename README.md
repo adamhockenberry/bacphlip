@@ -39,19 +39,42 @@ Additionally, users are required to install the [HMMER3 software suite](http://h
 
 The most straightforwad usage of BACPHLIP is as a command line tool. Assuming that `/valid/path/to/a/genome.fasta` exists, you can call BACPHLIP with the command:
 ```
-python -m bacphlip -i /valid/path/to/a/genome.fasta
+bacphlip -i /valid/path/to/a/genome.fasta
 ```
 
 This command should create 4 seperate files in the path of the target `genome.fasta` with `genome.fasta.bacphlip` containing the final model predictions (tab-separated format) in terms of probability of the input phage being either "Virulent" or "Temperate" (the other files append `.6frame`, `.hmmsearch`, and `.hmmsearch.tsv` to the genome file). Attempting to run this command a second time, assuming the first worked, should create an error since the output files already exist. This behavior can be altered with a flag to force overwrite the files:
 ```
-python -m bacphlip -i /valid/path/to/a/genome.fasta -f 
+bacphlip -i /valid/path/to/a/genome.fasta -f 
 ```
 
 Finally, a path to a local HMMER3 install (specifically, the `hmmsearch` tool) can be specified in the command line:
 ```
-python -m bacphlip -i /valid/path/to/a/genome.fasta --local_hmmsearch /valid/path/to/hmmsearch
+bacphlip -i /valid/path/to/a/genome.fasta --local_hmmsearch /valid/path/to/hmmsearch
 ```
 
+However, BACPHLIP can also be accessed and used as a python library. From a python interpreter simply type:
+```
+import bacphlip
+bacphlip.run_pipeline('/valid/path/to/a/genome.fasta')
+```
+
+At present this is probably the easiest way to run BACPHLIP on a batch of input files:
+```
+import bacphlip
+import glob
+for infile_loc in glob.glob('/valid/path/to/a/set/of/files/*.fasta'):
+    bacphlip.run_pipeline(infile_loc)
+```
+
+Finally, using BACPHLIP as a library makes individual functions available to the user in order to run and possibly troubleshoot single steps. I.e.:
+```
+import bacphlip
+bacphlip.six_frame_translate( ... )
+bacphlip.hmmsearch_py( ... )
+bacphlip.process_hmmsearch( ... )
+bacphlip.predict_lifestyle( ... )
+```
+Each function has a relevant set of arguments that should be clear from the docs. Running in this manner will give more flexibility with regard to file names and may prove useful to some users.
 
 ## Next steps
 
@@ -59,6 +82,7 @@ We have several planned next steps, including:
 1. adding a tutorial for library usage as a jupyter notebook in a forthcoming `examples` folder. 
 2. adding the ability to run the pipeline in a "quiet" mode
 3. adding a flag for batch input of sequences. 
+4. (insert your suggestion here)
 
 ## Misc
 

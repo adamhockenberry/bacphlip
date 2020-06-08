@@ -11,5 +11,5 @@ The package consists of the following Python modules:
 * bacphlip
 
 """
-__version__ = "0.9.3"
+__version__ = "0.9.4"
 from .bacphlip import *
