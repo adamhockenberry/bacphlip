@@ -26,7 +26,7 @@ You can install BACPHLIP with pip:
 pip install bacphlip
 ```
 
-Alternatively, users can pull/download the latest github repository, navigate to the directory where BACPHLIP was downloaded and run:
+Alternatively, users can clone/download the latest github repository, navigate to the directory where BACPHLIP was downloaded and run:
 ```
 pip install .
 ```
@@ -52,9 +52,9 @@ A path to a local HMMER3 install (specifically, the `hmmsearch` tool) can be spe
 bacphlip -i /valid/path/to/a/genome.fasta --local_hmmsearch /valid/path/to/hmmsearch
 ```
 
-Users wishing to run BACPHLIP on multiple phages in batch are encouraged to use the `--multi-fasta` run-time flag. In this case, the input genome (nucleotide) fasta file should contain multiple sequence records (one per complete genome) with unique id's (as parsed by `biopython`). BACPHLIP will create a directory named after the input file, and intermediate files associated with each sequence record will be named from the record id and written to this directory. Finally, the final output file will contain a single table with predictions for each genome. Assuming that `multigenome.fasta` exists:
+Users wishing to run BACPHLIP on multiple phages in batch are encouraged to use the `--multi_fasta` run-time flag. In this case, the input genome (nucleotide) fasta file should contain multiple sequence records (one per complete genome) with unique id's (as parsed by `biopython`). BACPHLIP will create a directory named after the input file, and intermediate files associated with each sequence record will be named from the record id and written to this directory. Finally, the final output file will contain a single table with predictions for each genome. Assuming that `multigenome.fasta` exists:
 ```
-bacphlip -i /valid/path/to/a/multigenome.fasta --multi-fasta
+bacphlip -i /valid/path/to/a/multigenome.fasta --multi_fasta
 ```
 
 Additionally, BACPHLIP can also be accessed and used as a python library. From a python interpreter simply type:
@@ -63,13 +63,21 @@ import bacphlip
 bacphlip.run_pipeline('/valid/path/to/a/genome.fasta')
 ```
 
-A batch of input files could be easily run using this library functionality:
+A batch of input files can be run as a loop using this library functionality:
 ```
 import bacphlip
 import glob
 for infile_loc in glob.glob('/valid/path/to/a/set/of/files/*.fasta'):
     bacphlip.run_pipeline(infile_loc)
 ```
+
+or by using the `run_pipeline_multi` function:
+```
+import bacphlip
+multi_fasta_file = '/valid/path/to/multi.fasta'
+bacphlip.run_pipeline_multi(infile_loc)
+```
+
 
 Finally, using BACPHLIP as a library makes individual functions available to the user in order to run and possibly troubleshoot single steps. I.e.:
 ```
