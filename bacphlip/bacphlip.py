@@ -282,7 +282,9 @@ def parse_cmd_line_args():
             help="Whether to overwrite all existing files that will be created if they exist. Default is False")
     parser.add_argument("--multi_fasta", default=False, action="store_true",\
             help="By default, BACPHLIP assumes that the input file contains one genome (nucleotide) sequence record. "
-                    "Users providing a multi_fasta input file must use this flag")
+                    "Users providing a multi_fasta input file must use this flag. Note that each record should be uniquely "
+                    "named and should contain complete genomes for different phages. BACPHLIP should not be run on " 
+                    "incomplete / fragmented genomes spanning mulitple records.")
     parser.add_argument("--local_hmmsearch", default=False,\
             help="By default, BACPHLIP assumes a system install of \"hmmsearch\". Use this flag to provide a custom path "
                     "to a local install of hmmsearch if necessary.")
