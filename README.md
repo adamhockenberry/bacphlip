@@ -15,7 +15,7 @@ Pre-print available at: <https://www.biorxiv.org/content/10.1101/2020.05.13.0948
 
 ## Overview and important caveats
 
-The BACPHLIP software is designed to test whether a given phage genome (`.fasta` formatted) is likely to be either temperate (lysogenic) or virulent (lytic). The software makes this determination by searching for a particular set of what are hypothesized to be "temperate-specific" protein domains. As such, the default assumption is that any given input file is a virulent (lytic) phage. Depending on the number and identity of various proteins that are found, this default assumption may be updated to indicate that the sequence is in fact temperate. **BACPHLIP does not perform any checks on whether the input sequence is even a phage.** Thus, random stretches of DNA will be called virulent phages (assuming that no relevant domains are found within the random sequence) not because there are any idications of the sequence being a virulent phage, but rather because no data overturns the starting assumption (that you provided the program with a phage). Similarly strange results will occur if you provide BACPHLIP with whole bacterial chromosomes, these will likely be called temperate phages simply because it's likely that several of the relevant "temperate domains" will be found somewhere within the chromosome. 
+The BACPHLIP software is designed to test whether a given phage genome (`.fasta` formatted) is likely to be either temperate (lysogenic) or virulent (lytic). The software makes this determination by searching for a particular set of what are hypothesized to be "temperate-specific" protein domains. As such, the default assumption is that any given input file is a virulent (lytic) phage. Depending on the number and identity of various proteins that are found, this default assumption may be updated to indicate that the sequence is in fact temperate. **BACPHLIP does not perform any checks on whether the input sequence is even a phage.** Thus, random stretches of DNA will be called virulent phages (assuming that no relevant domains are found within the random sequence) not because there are any idications of the sequence being a virulent phage, but rather because no data overturns the starting assumption (that you provided the program with a phage). Similarly strange results will occur if you provide BACPHLIP with whole bacterial chromosomes, these will likely be called temperate phages simply because it's likely that several of the relevant "temperate domains" will be found somewhere within the chromosome. Lastly, we stress that the absence of evidence is not the evidence of absence. If the genome is not complete, we simply do not have enough information to make a determination as to whether lysogeny-associated domains occur and **incomplete/partially-assembled genomes should not be used as input.**  
 
 Finally, we recommend that users read through all documentation here as well as the manuscript (referenced above). Our software was trained on a dataset consisting almost entirely of phages from the order *Caudovirales*, most of which infect hosts in the orders *Actinobacteria*, *Gammaproteobacteria*, and *Bacilli*. We urge caution when using the software on species outside of these orders, but this fact may change as we update and expand training set data in future releases. 
 
@@ -37,7 +37,7 @@ Additionally, users are required to install the [HMMER3 software suite](http://h
 
 ## Examples
 
-The most straightforwad usage of BACPHLIP is as a command line tool. Assuming that `/valid/path/to/a/genome.fasta` exists, you can call BACPHLIP with the command:
+The most straightforwad usage of BACPHLIP is as a command line tool. The required input is a genome (nucleotide) `fasta` file containing one record. Assuming that `/valid/path/to/a/genome.fasta` exists, you can call BACPHLIP with the command:
 ```
 bacphlip -i /valid/path/to/a/genome.fasta
 ```
@@ -47,18 +47,23 @@ This command should create 4 seperate files in the path of the target `genome.fa
 bacphlip -i /valid/path/to/a/genome.fasta -f 
 ```
 
-Finally, a path to a local HMMER3 install (specifically, the `hmmsearch` tool) can be specified in the command line:
+A path to a local HMMER3 install (specifically, the `hmmsearch` tool) can be specified in the command line:
 ```
 bacphlip -i /valid/path/to/a/genome.fasta --local_hmmsearch /valid/path/to/hmmsearch
 ```
 
-However, BACPHLIP can also be accessed and used as a python library. From a python interpreter simply type:
+Users wishing to run BACPHLIP on multiple phages in batch are encouraged to use the `--multi-fasta` run-time flag. In this case, the input genome (nucleotide) fasta file should contain multiple sequence records (one per complete genome) with unique id's (as parsed by `biopython`). BACPHLIP will create a directory named after the input file, and intermediate files associated with each sequence record will be named from the record id and written to this directory. Finally, the final output file will contain a single table with predictions for each genome. Assuming that `multigenome.fasta` exists:
+```
+bacphlip -i /valid/path/to/a/multigenome.fasta --multi-fasta
+```
+
+Additionally, BACPHLIP can also be accessed and used as a python library. From a python interpreter simply type:
 ```
 import bacphlip
 bacphlip.run_pipeline('/valid/path/to/a/genome.fasta')
 ```
 
-At present this is probably the easiest way to run BACPHLIP on a batch of input files:
+A batch of input files could be easily run using this library functionality:
 ```
 import bacphlip
 import glob
@@ -74,14 +79,13 @@ bacphlip.hmmsearch_py( ... )
 bacphlip.process_hmmsearch( ... )
 bacphlip.predict_lifestyle( ... )
 ```
-Each function has a relevant set of arguments that should be clear from the docs. Running in this manner will give more flexibility with regard to file names and may prove useful to some users.
+Each function has a relevant set of arguments that should be clear from the docs. It is our hope that running BACPHLIP in this manner will give more flexibility with regard to file names and may prove useful to some users.
 
 ## Next steps
 
 We have several planned next steps, including:
 1. adding a tutorial for library usage as a jupyter notebook in a forthcoming `examples` folder. 
 2. adding the ability to run the pipeline in a "quiet" mode
-3. adding a flag for batch input of sequences. 
 4. (insert your suggestion here)
 
 ## Misc

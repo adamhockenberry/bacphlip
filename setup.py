@@ -5,7 +5,7 @@ INSTALL_REQUIRES=[
         "biopython>=1.7", 
         "pandas>=0.25",
         "joblib>=0.13",
-        "scikit-learn==0.23"
+        "scikit-learn==0.23.1"
         ]
 
 with open("README.md", "r") as fh:
