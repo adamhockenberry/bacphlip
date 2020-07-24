@@ -69,7 +69,7 @@ import bacphlip
 bacphlip.run_pipeline('/valid/path/to/a/genome.fasta')
 ```
 
-A batch of input files can be run as a loop using this library functionality:
+A batch of input files can be run as a loop using this library functionality (which will output and save separate prediction [`.bacphlip`, a simple tab-separated format] files for each input:
 ```
 import bacphlip
 import glob
@@ -77,7 +77,7 @@ for infile_loc in glob.glob('/valid/path/to/a/set/of/files/*.fasta'):
     bacphlip.run_pipeline(infile_loc)
 ```
 
-or by using the `run_pipeline_multi` function:
+or if multiple genomes are included in the same `.fasta` file, numerous genomes can be analyzed by using the `run_pipeline_multi` function which will create a single `.bacphlip` containing rows for each input:
 ```
 import bacphlip
 multi_fasta_file = '/valid/path/to/multi.fasta'
@@ -100,7 +100,7 @@ Each function has a relevant set of arguments that should be clear from the docs
 We have several planned next steps, including:
 1. adding a tutorial for library usage as a jupyter notebook in a forthcoming `examples` folder. 
 2. adding the ability to run the pipeline in a "quiet" mode
-4. (insert your suggestion here)
+3. (insert your suggestion here)
 
 ## Misc
 
