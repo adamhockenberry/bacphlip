@@ -16,12 +16,11 @@ with open("bacphlip/__init__.py", "r") as f:
     for line in init:
         if "__version__" in line:
             __version__ = line.split('"')[-2]
-            #__version__ = line.split('=')[-1].strip('"')
 
 setuptools.setup(
     name="bacphlip",
     packages=['bacphlip'],
-    entry_points={ 'console_scripts': ['Package = bacphlip.__main__:main', 'bacphlip=bacphlip.command_line:main']}, 
+    entry_points={ 'console_scripts': ['bacphlip=bacphlip.command_line:main']}, 
     version=__version__,
     author="Adam J Hockenberry",
     author_email="adam.hockenberry@utexas.edu",
