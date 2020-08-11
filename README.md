@@ -69,7 +69,7 @@ import bacphlip
 bacphlip.run_pipeline('/valid/path/to/a/genome.fasta')
 ```
 
-A batch of input files can be run as a loop using this library functionality (which will output and save separate prediction [`.bacphlip`, a simple tab-separated format] files for each input:
+A batch of input files can be run as a loop using this library functionality (which will output and save separate prediction [`.bacphlip`, a simple tab-separated format] files for each input):
 ```
 import bacphlip
 import glob

@@ -175,7 +175,7 @@ def six_frame_translate(fasta_file_path, output_file_path, multi_fasta=False, fo
                 if len(j) >= MIN_PROT_LENGTH:
                     prots.append(j)
         if multi_fasta:
-            ind_outfile_path = output_file_path + '{}.6frame'.format(genome_id)
+            ind_outfile_path = str(output_file_path) + '{}.6frame'.format(genome_id)
             try:
                 check_nonexisting_path(ind_outfile_path)
             except:
@@ -318,7 +318,7 @@ def compile_full_hmmsearch_df(output_file, save_dir, force_overwrite):
     if not force_overwrite:
         check_nonexisting_path(output_file)
     full_df = pd.DataFrame()
-    for df_file in glob.glob(save_dir + '*.hmmsearch.tsv'):
+    for df_file in glob.glob(str(save_dir) + '*.hmmsearch.tsv'):
         ind_name = df_file.split('/')[-1].split('.hmmsearch.tsv')[0]
         ind_df = pd.read_csv(df_file, sep='\t', index_col=0)
         ind_df.index = [ind_name]
