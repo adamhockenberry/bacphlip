@@ -9,16 +9,12 @@ tags:
 authors:
   - name: Adam J. Hockenberry^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
     orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+    affiliation: 1 # (Multiple affiliations must be quoted)
   - name: Claus O .Wilke
-    affiliation: 2
+    affiliation: 1
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
+ - name: The University of Texas at Austin
    index: 1
- - name: Institution Name
-   index: 2
- - name: Independent Researcher
-   index: 3
 date: 13 August 2017
 bibliography: paper.bib
 
