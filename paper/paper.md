@@ -70,52 +70,42 @@ Here, we combined the distinct approaches used in previous studies to
 create an open-source software package for predicting phage lifestyles
 from genome sequence data. `BACPHLIP` (BACterioPHage LIfestyle Predictor)
 is a python library with an optional command-line interface that relies
-on the HMMER3 software suite ([@eddy_accelerated_2011]) to identify the
+on the HMMER3 software suite [@eddy_accelerated_2011] to identify the
 presence of a set of lysogeny-associated protein domains. `BACPHLIP`
 assumes that the input genome (nucleotide) sequence is from a fully
 complete phage. The phage is initially assumed to be virulent but the
 presence and pattern of specific lysogeny-associated protein domains can
 override this assumption and result in a temperate classification.
 
-# Mathematics
+# Development and implementation
 
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
+We developed `BACPHLIP` by searching the Conserved Domain Database
+[@lu_cddsparcle_2020] \(accessed on 03/2020) for protein domains that are
+hypothesized to be enriched in temperate phages (*i.e.* mechanistically
+involved in lysogeny, see Supplementary Text). We did not include a
+broad set of protein domains in our search strategy in order to ensure
+interpretability of our model and to limit the possibility of
+over-fitting. To determine which of the 371 initial protein domain hits
+preferentially associate with temperate phages, we leveraged 1,057
+phages with annotated lifestyles collected by
+@mavrich_bacteriophage_2017. For each genome sequence, we created a list
+of all possible 6-frame translation products $\geq$ 40 amino acids.
+Next, we used `HMMER3` to search for the presence of the aforementioned
+protein domains, resulting in a vector for each phage describing the
+presence (1) or absence (0) of each domain.
 
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text.
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-# Figures
-
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
+At this stage, we randomly split the phage dataset into training and
+testing sets (60:40 split, 634 and 423 phages). Using only the training
+data, we removed any protein domain that was present in two or fewer
+genomes or which was more prevalent in the virulent phage genomes. We
+thus established a condensed dataset of 206 putatively useful protein
+domains for downstream phage classification. Finally, we fit a Random
+Forest classifier to our labeled training data using cross-validation to
+tune hyper-parameters (20 separate randomly selected validation sets
+drawn from within the training set, see Supplementary Text). The best
+performing model from this search, when re-fit to the entire training
+set, achieved 99.8% predictive accuracy (633/634 correct predictions) on
+the training data.
 
 # Acknowledgements
 
