@@ -6,9 +6,9 @@ tags:
   - bacteriophage
   - microbiology
 authors:
-  - name: Adam J. Hockenberry^[Corresponding author]
+  - name: Adam J. Hockenberry^[Corresponding author: adam.hockenberry@utexas.edu]
     orcid: 0000-0001-9476-0104
-    affiliation: "1" # (Multiple affiliations must be quoted)
+    affiliation: 1  
   - name: Claus O. Wilke
     orcid: 0000-0002-7470-9261
     affiliation: "1"
@@ -18,6 +18,8 @@ affiliations:
 date: 25 January 2021
 bibliography: paper.bib
 
+---
+
 # Summary
 Bacteriophages are broadly classified into two distinct lifestyles: temperate
 phages are capable of a latent phase of infection within a host cell, whereas
@@ -25,9 +27,9 @@ virulent phages directly replicate and lyse host cells upon infection. Here, we
 present `BACPHLIP`, a computational tool for predicting bacteriophage lifestyle
 based solely on genome sequence data. On an independent test set of 423 phage
 genomes, `BACPHLIP` achieves a classification accuracy of 98%, exceeding that of
-the best available software (79%). 
+the best previously available software (79%). 
 
-**textbf{Availability and Implementation:** `BACPHLIP` is freely available
+**Availability and Implementation:** `BACPHLIP` is freely available
 (https://github.com/adamhockenberry/bacphlip), with development code provided
 separately (https://github.com/adamhockenberry/bacphlip-model-dev).
 
@@ -35,6 +37,12 @@ separately (https://github.com/adamhockenberry/bacphlip-model-dev).
 full accuracy assessment is available in the model repository.
 
 # Statement of need
+
+Bacteriophages play important ecological roles
+[@paez-espino_uncovering_2016]. 
+
+
+
 
 `Gala` is an Astropy-affiliated Python package for galactic dynamics. Python
 enables wrapping low-level languages (e.g., C) for speed without losing
