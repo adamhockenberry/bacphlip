@@ -107,9 +107,57 @@ performing model from this search, when re-fit to the entire training
 set, achieved 99.8% predictive accuracy (633/634 correct predictions) on
 the training data.
 
-# Acknowledgements
+# Development and implementation
+
+When applied to an independent test set of 423 phages (240 temperate and
+183 virulent, drawn randomly from the initial dataset and withheld for
+the entirety of model development), BACPHLIP achieved a 98.3%
+classification accuracy (415/423 correct predictions). On the same set
+of phages, this accuracy exceeded that of both PHACTS and
+@mavrich_bacteriophage_2017 (79% and 95.5% accuracy, respectively).
+Additional measures of model performance including confusion matrices
+for each method are available in the Supplementary Text alongside a
+discussion of feature-level contributions (see also Supplementary Table
+1 for a complete list of all protein domains).
+
+To ascertain the effect of phylogenetic structure in our dataset (which
+could inflate accuracy metrics), we clustered all labeled phages
+([@jain_high_2018]) and evaluated accuracy separately on testing set
+data for which there were no genomes in the training set with $>$80%
+sequence identity across $>$80% of the genome. Although the training set
+contained only distant phylogenetic relatives to these 172 genomes,
+BACPHLIP still achieved 96.5% accuracy (82% and 93% for PHACTS and
+@mavrich_bacteriophage_2017, respectively).
+
+# Discussion
+
+Across all tested datasets, BACPHLIP substantially outperforms existing
+methods for classifying phage lifestyles. Our approach relies on access
+to training data (phages with known lifestyles) and we encourage users
+to recognize the contribution made by @mavrich_bacteriophage_2017. We
+emphasize that the existing dataset is made up almost exclusively of
+phages from within the *Caudovirales* order and is further biased
+towards a small number of hosts (95% infect species within the orders
+*Actinobacteria*, *Gammaproteobacteria*, and *Bacilli*). We thus urge
+caution when predicting the lifestyle of phages outside of these orders.
+We also further reiterate that BACPHLIP was developed for use on
+complete phage genomes and performance on fragmented or partially
+assembled genomes is likely to be substantially degraded; users are
+strongly encouraged to ensure that the starting assumptions are met
+prior to running BACPHLIP. We anticipate that the accuracy of BACPHLIP
+will increase in future releases as: i) more phylogenetically diverse
+phages become available for training the classifier (potentially via
+analysis of prophages and/or meta-genomic studies) and ii) discovery and
+annotation of conserved protein domains improves to encapsulate new
+domains and more phylogenetic diversity amongst the existing protein
+domains that BACPHLIP currently relies on.
+
+# Acknowledgements and funding
 
 We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
 Oh, and support from Kathryn Johnston during the genesis of this project.
 
 # References
+
+This work was supported by National Institutes of Health grants F32
+GM130113 to A.J.H. and R01 GM088344 to C.O.W.
