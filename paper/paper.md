@@ -1,22 +1,33 @@
 ---
-title: 'BACPHLIP: Predicting bacteriophage lifestyle from conserved protein domains'
+title: 'Gala: A Python package for galactic dynamics'
 tags:
   - Python
-  - bioinformatics
-  - bacteriophage
-  - microbiology
+  - astronomy
+  - dynamics
+  - galactic dynamics
+  - milky way
 authors:
-  - name: Adam J. Hockenberry^[Corresponding author: adam.hockenberry@utexas.edu]
-    orcid: 0000-0001-9476-0104
-    affiliation: 1  
-  - name: Claus O. Wilke
-    orcid: 0000-0002-7470-9261
-    affiliation: 1
+  - name: Adrian M. Price-Whelan^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
+    orcid: 0000-0003-0872-7098
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Author Without ORCID
+    affiliation: 2
+  - name: Author with no affiliation
+    affiliation: 3
 affiliations:
- - name: Department of Integrative Biology, The University of Texas at Austin, Austin, TX 78712, USA.
+ - name: Lyman Spitzer, Jr. Fellow, Princeton University
    index: 1
-date: 25 January 2021
+ - name: Institution Name
+   index: 2
+ - name: Independent Researcher
+   index: 3
+date: 13 August 2017
 bibliography: paper.bib
+
+# Optional fields if submitting to a AAS journal too, see this blog post:
+# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
+aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
+aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
