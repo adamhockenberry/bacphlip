@@ -7,13 +7,13 @@ tags:
   - bacteriophage
   - microbiology
 authors:
-  - name: Adam J. Hockenberry^[Corresponding author: adam.hockenberry@utexas.edu]
+  - name: Adrian M. Price-Whelan^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
     orcid: 0000-0003-0872-7098
-    affiliation: 1 # (Multiple affiliations must be quoted)
-  - name: Claus O .Wilke
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Author Without ORCID
     affiliation: 1
 affiliations:
- - name: Department of Integrative Biology, The University of Texas at Austin, Austin, TX 78712, USA.
+ - name: Department of Integrative Biology, The University of Texas at Austin
    index: 1
 date: 25 January 2021
 bibliography: paper.bib
