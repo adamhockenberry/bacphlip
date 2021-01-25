@@ -39,30 +39,43 @@ full accuracy assessment is available in the model repository.
 # Statement of need
 
 Bacteriophages play important ecological roles
-[@paez-espino_uncovering_2016]. 
+[@paez-espino_uncovering_2016; @nishimura_environmental_2017; @emerson_host-linked_2018; @daly_viruses_2019; @gregory_marine_2019],
+influence both the physiology and evolution of host species
+[@touchon_genetic_2016; @forterre_manipulation_2011; @carey_phage_2019],
+and possess a number of unique traits [@ofir_contemporary_2018] that
+are relevant to ongoing biotechnological and medical applications
+[@dedrick_engineered_2019; @rodriguez-gonzalez_quantitative_2020]. The
+availability of phage genome sequences has expanded in recent years due
+to the development of meta-genomics
+[@deng_viral_2014; @pope_whole_2015; @roux_viral_2015; @simmonds_virus_2017; @tisza_discovery_2020].
 
+A particularly important phage phenotype is whether the phage has a
+temperate (lysogenic) or virulent (lytic) lifestyle
+[@bobay_adaptation_2013]. Phages are extraordinarily diverse and this
+dichotomy is an over-simplification
+[@abedon_bacteriophage_2008; @dion_phage_2020]; nevertheless lifestyle
+classification is broadly recognized and important in numerous contexts
+[@mavrich_bacteriophage_2017].
 
+While phage lifestyle ultimately should be determined experimentally,
+this is impractical for the entirety of newly discovered phage genomes.
+Using computational methods, @mcnair_phacts_2012 developed a random
+forest classifier (`PHACTS`) to predict lifestyle based off of sequence
+similarity to a set of query proteins (randomly selected from the phage
+proteome training set). More recently, @mavrich_bacteriophage_2017
+described a computational classification method based on detecting a
+curated set of protein domains.
 
-
-`Gala` is an Astropy-affiliated Python package for galactic dynamics. Python
-enables wrapping low-level languages (e.g., C) for speed without losing
-flexibility or ease-of-use in the user-interface. The API for `Gala` was
-designed to provide a class-based and user-friendly interface to fast (C or
-Cython-optimized) implementations of common operations such as gravitational
-potential and force evaluation, orbit integration, dynamical transformations,
-and chaos indicators for nonlinear dynamics. `Gala` also relies heavily on and
-interfaces well with the implementations of physical units and astronomical
-coordinate systems in the `Astropy` package [@astropy] (`astropy.units` and
-`astropy.coordinates`).
-
-`Gala` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in `Gala` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike.
+Here, we combined the distinct approaches used in previous studies to
+create an open-source software package for predicting phage lifestyles
+from genome sequence data. `BACPHLIP` (BACterioPHage LIfestyle Predictor)
+is a python library with an optional command-line interface that relies
+on the HMMER3 software suite ([@eddy_accelerated_2011]) to identify the
+presence of a set of lysogeny-associated protein domains. `BACPHLIP`
+assumes that the input genome (nucleotide) sequence is from a fully
+complete phage. The phage is initially assumed to be virulent but the
+presence and pattern of specific lysogeny-associated protein domains can
+override this assumption and result in a temperate classification.
 
 # Mathematics
 
