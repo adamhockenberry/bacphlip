@@ -11,12 +11,11 @@ authors:
     orcid: 0000-0003-0872-7098
     affiliation: 1 # (Multiple affiliations must be quoted)
   - name: Claus O .Wilke
-    orcid: 0000-0002-7470-9261
     affiliation: 1
 affiliations:
- - name: The University of Texas at Austin
+ - name: Department of Integrative Biology, The University of Texas at Austin, Austin, TX 78712, USA.
    index: 1
-date: 13 August 2017
+date: 25 January 2021
 bibliography: paper.bib
 
 ---
