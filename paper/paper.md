@@ -7,7 +7,7 @@ tags:
   - bacteriophage
   - microbiology
 authors:
-  - name: Adam J. Hockenberry^[Corresponding author.]
+  - name: Adam J. Hockenberry^[Corresponding author: adam.hockenberry@utexas.edu]
     orcid: 0000-0003-0872-7098
     affiliation: 1 # (Multiple affiliations must be quoted)
   - name: Claus O. Wilke
