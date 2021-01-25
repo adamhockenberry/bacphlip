@@ -6,40 +6,33 @@ tags:
   - bacteriophage
   - microbiology
 authors:
-  - name: Adam J. Hockenberry^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
-    affiliation: 2
-  - name: Author with no affiliation
-    affiliation: 3
+  - name: Adam J. Hockenberry^[Corresponding author]
+    orcid: 0000-0001-9476-0104
+    affiliation: "1" # (Multiple affiliations must be quoted)
+  - name: Claus O. Wilke
+    orcid: 0000-0002-7470-9261
+    affiliation: "1"
 affiliations:
  - name: Department of Integrative Biology, The University of Texas at Austin, Austin, TX 78712, USA.
    index: 1
- - name: Institution Name
-   index: 2
- - name: Independent Researcher
-   index: 3
-date: 13 August 2017
+date: 25 January 2021
 bibliography: paper.bib
 
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
----
-
 # Summary
+Bacteriophages are broadly classified into two distinct lifestyles: temperate
+phages are capable of a latent phase of infection within a host cell, whereas
+virulent phages directly replicate and lyse host cells upon infection. Here, we
+present `BACPHLIP`, a computational tool for predicting bacteriophage lifestyle
+based solely on genome sequence data. On an independent test set of 423 phage
+genomes, `BACPHLIP` achieves a classification accuracy of 98%, exceeding that of
+the best available software (79%). 
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+**textbf{Availability and Implementation:** `BACPHLIP` is freely available
+(https://github.com/adamhockenberry/bacphlip), with development code provided
+separately (https://github.com/adamhockenberry/bacphlip-model-dev).
+
+**Supporting Information:** Supporting text regarding biological findings and
+full accuracy assessment is available in the model repository.
 
 # Statement of need
 
