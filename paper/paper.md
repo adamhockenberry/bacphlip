@@ -59,7 +59,9 @@ Using computational methods, @mcnair_phacts_2012 developed a random forest
 classifier (`PHACTS`) to predict lifestyle based off of sequence similarity to
 a set of query proteins. More recently, @mavrich_bacteriophage_2017 described a
 computational classification method based on detecting a curated set of protein
-domains but did not make this software available.
+domains but did not make this software available. Finally,
+@tynecki_phageai_2020 released a novel modeling framework, `PhageAI`, with an
+associated `python` API for bacteriophage lifestyle classification.
 
 Here, we combined the distinct approaches used in previous studies to create an
 open-source software package for predicting phage lifestyles from genome
@@ -75,19 +77,19 @@ a classification accuracy of 98.3% (415/423 correct predictions) on a fully
 independent set of testing data, greatly exceeding that of the existing
 `PHACTS` software (79%). 
 
-# Modeling assumptions
+# Model assumptions
 
-We emphasize that the `BACPHLIP` model relies on an existing labeled dataset that
-is made up almost exclusively of phages from within the *Caudovirales* order
-and is further biased towards a small number of hosts (95% infect species
-within the orders *Actinobacteria*, *Gammaproteobacteria*, and *Bacilli*). We
-thus urge caution when predicting the lifestyle of phages outside of these
-phylogenetic orders. We also note that `BACPHLIP` was developed
-for use on complete phage genomes and performance on fragmented or partially
-assembled genomes is likely to be degraded; users are strongly encouraged to
-ensure that the starting assumptions (re-itereated extensively in the package
-documentation) are met prior to using `BACPHLIP`. We anticipate that the
-accuracy of `BACPHLIP` will increase in future releases as: i) more
+We emphasize that the `BACPHLIP` classification model was trained on an existing
+labeled dataset that is made up almost exclusively of phages from within the
+*Caudovirales* order and is further biased towards a small number of hosts (95%
+infect species within the orders *Actinobacteria*, *Gammaproteobacteria*, and
+*Bacilli*). We urge caution when predicting the lifestyle of phages
+outside of these phylogenetic orders. We also note that `BACPHLIP` was
+developed for use on complete phage genomes and performance on fragmented or
+partially assembled genomes is likely to be degraded; users are strongly
+encouraged to ensure that the starting assumptions (re-itereated extensively in
+the package documentation) are met prior to using `BACPHLIP`. We anticipate
+that the accuracy of `BACPHLIP` will increase in future releases as: i) more
 phylogenetically diverse phages become available for training the classifier
 (potentially via analysis of prophages and/or meta-genomic studies) and ii)
 discovery and annotation of conserved protein domains improves to encapsulate
