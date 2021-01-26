@@ -21,19 +21,19 @@ bibliography: paper.bib
 ---
 
 # Summary
-Bacteriophages (viruses that infect bacgerial species) are broadly classified
+Bacteriophages (viruses that infect bacterial species) are broadly classified
 into two distinct lifestyles: temperate phages are capable of a latent phase of
 infection within a host cell, whereas virulent phages directly replicate and
-lyse host cells upon infection.  Determining the lifestyle of a given phage is
-critical to understanding its potential biological significance. Here, we
-present `BACPHLIP`, a computational tool for predicting bacteriophage lifestyle
-based solely on genome sequence data. On an independent test set of 423 phage
-genomes, `BACPHLIP` achieves a classification accuracy of 98%, greatly
-exceeding that of the best previously available software (79%). 
-
-**Availability and Implementation:** `BACPHLIP` is freely available
-(https://github.com/adamhockenberry/bacphlip), with development code provided
-separately (https://github.com/adamhockenberry/bacphlip-model-dev).
+lyse host cells upon infection. Determining the lifestyle of a given phage is
+critical for understanding its biological significance, but far too many phages
+have been discovered in recent years to rely on experimental determination of
+this important trait. Here, we present `BACPHLIP`, a computational tool for
+predicting bacteriophage lifestyle based solely on genome sequence data.
+`BACPHLIP` is a `python` package with an optional command-line interface with
+an extensively tuned and tested random forest classifier at its core. On an
+independent test set of 423 phage genomes, `BACPHLIP` achieved a classification
+accuracy of 98%, greatly exceeding that of the best previously available
+software. 
 
 # Statement of need
 
@@ -41,83 +41,84 @@ Bacteriophages play important ecological roles [@paez-espino_uncovering_2016;
 @nishimura_environmental_2017; @emerson_host-linked_2018; @daly_viruses_2019;
 @gregory_marine_2019], influence both the physiology and evolution of host
 species [@touchon_genetic_2016; @carey_phage_2019], and possess a number of
-unique traits [@ofir_contemporary_2018] that are relevant to ongoing
-biotechnological and medical applications [@dedrick_engineered_2019;
-@rodriguez-gonzalez_quantitative_2020]. The availability of phage genome
-sequences has expanded in recent years due to the development of meta-genomics
-[@deng_viral_2014; @pope_whole_2015; @roux_viral_2015; @tisza_discovery_2020].
-A particularly important aspect of phage biology is whether individual species
-have a temperate (lysogenic) or virulent (lytic) lifestyle
-[@bobay_adaptation_2013], a classification which refers to the ability of phage
-species to integrate into the host cell genome and lay dormant for periods of
-time. 
+unique traits that are relevant to ongoing biotechnological and medical
+applications [@ofir_contemporary_201; 8@dedrick_engineered_2019;
+@rodriguez-gonzalez_quantitative_2020]. The diversity and availability of phage
+genome sequences has expanded in recent years due to the development of
+metagenomic sequencing techniques [@deng_viral_2014; @pope_whole_2015;
+@roux_viral_2015; @tisza_discovery_2020]. A particularly important aspect of
+bacteriophage biology is whether individual species have a temperate (lysogenic) or
+virulent (lytic) lifestyle [@bobay_adaptation_2013], a classification which
+refers to the ability of some phage species to integrate into host bacterial cell
+genomes where they may lay dormant for extended periods of time.
 
-While phage lifestyle ultimately should be determined experimentally,
-this is impractical for the entirety of newly discovered phage genomes.  Using
-computational methods, @mcnair_phacts_2012 developed a random forest classifier
-(`PHACTS`) to predict lifestyle based off of sequence similarity to a set of
-query proteins (randomly selected from the phage proteome training set). More
-recently, @mavrich_bacteriophage_2017 described a computational classification
-method based on detecting a curated set of protein domains but did not make
-this software available.
+The gold-standard for phage lifestyle classification relies on experimental
+determination, but these approaches are impractical for the entirety of newly
+discovered phage genomes (many of whom are known *only* by their genomes).
+Using computational methods, @mcnair_phacts_2012 developed a random forest
+classifier (`PHACTS`) to predict lifestyle based off of sequence similarity to
+a set of query proteins. More recently, @mavrich_bacteriophage_2017 described a
+computational classification method based on detecting a curated set of protein
+domains but did not make this software available.
 
 Here, we combined the distinct approaches used in previous studies to create an
 open-source software package for predicting phage lifestyles from genome
-sequence input. `BACPHLIP` (BACterioPHage LIfestyle Predictor) is a `python`
-library with an optional command-line interface that relies on the `HMMER3`
-software suite [@eddy_accelerated_2011] to identify the presence of a set of
-lysogeny-associated protein domains (methodically selected from the `Conserved
-Domain Database` [@lu_cddsparcle_2020]). From this presence/absence
-information, the core of `BACPHLIP` is a highly accurate random forest
-classifier that assigns a probability that the input phage is temperate or virulent.
+sequence input (`fasta` formatted). `BACPHLIP` (BACterioPHage LIfestyle
+Predictor) is a `python` library with an optional command-line interface that
+relies on the `HMMER3` software suite [@eddy_accelerated_2011] to identify the
+presence of a set of lysogeny-associated protein domains within the genome
+(methodically selected from the `Conserved Domain Database`
+[@lu_cddsparcle_2020]). Using this presence/absence information, the core of
+`BACPHLIP` is a highly accurate random forest classifier that reports on the
+probability that the input phage genome is capable of the temperate lifestyle.
 
 # Development and implementation
 
-We trained the `BACPHLIP` random forest classifier on an existing dataset of
-1,057 phage genomes with experimentally annotated lifestyles
+Briefly, we trained the `BACPHLIP` random forest classifier on an existing
+dataset of 1,057 phage genomes with experimentally annotated lifestyles
 [@mavrich_bacteriophage_2017]. For each genome sequence, we created a list of
-all possible 6-frame translation products $\geq$ 40 amino acids, and used
-`HMMER3` to search for the presence of 371 distinct protein domains
-hypothesized to be important to phage lifestyle based on their described
-function. The result of this procedure is a vector, for each phage, describing
-the presence (1) or absence (0) of each domain.
+all possible translation products $\geq$ 40 amino acids, and used `HMMER3` to
+search for the presence of 371 distinct protein domains hypothesized to be
+important for phage lifestyle classification based on their described function
+in the `CDD` database [@lu_cddsparcle_2020]. The result of this procedure is a
+vector, for each phage, describing the presence (1) or absence (0) of each
+domain within the indicated phage genome.
 
 We randomly split the phage dataset into training and testing sets (60:40
-split, 634 and 423 phages) and established a condensed dataset of 206
-putatively useful protein domains for use in downstream phage classification
-(removing from the initial set of 371 any protein domains that were present at
-low abundance in the training data). Finally, we fit a Random Forest classifier
-to our labeled training data using cross-validation to tune hyper-parameters.
-The best performing model from this search, when re-fit to the entire training
-set, achieved 99.8% predictive accuracy (633/634 correct predictions) on the
-training data and 98.3% classification accuracy (415/423) on the fully
-independent testing set data. For comparison, on this same testing set of
-phages, this accuracy value greatly exceeded that of the existing `PHACTS`
-software but also exceeded the results reported by @mavrich_bacteriophage_2017
-(79% and 95.5% accuracy, respectively).
+split, 634 and 423 phages) and established a condensed set of 206 putatively
+useful protein domains for use in downstream phage classification (removing any
+protein domains that were present at low abundance in the training data).
+Finally, we fit a random forest classifier to predict labeled training data
+(*i.e.* temperate or virulent) using the vector of protein domain
+presence/absence as the sole input and cross-validation to tune model
+hyper-parameters. The best performing model from this search, when re-fit to
+the entire training set, achieved 99.8% predictive accuracy (633/634 correct
+predictions) on the training data and 98.3% classification accuracy (415/423)
+on the fully independent testing set data. For comparison, on this same testing
+set of phages, the accuracy of `BACPHLHIP` greatly exceeds that of the existing
+`PHACTS` software but also improves on the results reported by
+@mavrich_bacteriophage_2017 (79% and 95.5% accuracy, respectively).
 
 # Discussion
 
-Across all tested datasets, BACPHLIP substantially outperforms existing
-methods for classifying phage lifestyles. Our approach relies on access
-to training data (phages with known lifestyles) and we encourage users
-to recognize the contribution made by @mavrich_bacteriophage_2017. We
-emphasize that the existing dataset is made up almost exclusively of
-phages from within the *Caudovirales* order and is further biased
-towards a small number of hosts (95% infect species within the orders
-*Actinobacteria*, *Gammaproteobacteria*, and *Bacilli*). We thus urge
-caution when predicting the lifestyle of phages outside of these orders.
-We also further reiterate that BACPHLIP was developed for use on
-complete phage genomes and performance on fragmented or partially
-assembled genomes is likely to be substantially degraded; users are
-strongly encouraged to ensure that the starting assumptions are met
-prior to running BACPHLIP. We anticipate that the accuracy of BACPHLIP
-will increase in future releases as: i) more phylogenetically diverse
-phages become available for training the classifier (potentially via
-analysis of prophages and/or meta-genomic studies) and ii) discovery and
-annotation of conserved protein domains improves to encapsulate new
-domains and more phylogenetic diversity amongst the existing protein
-domains that BACPHLIP currently relies on.
+Across all tested datasets and several measurements of accuracy, `BACPHLIP`
+substantially outperforms existing methods for classifying phage lifestyles. We
+emphasize that the `BACPHLIP` model relies on an existing labeled dataset that
+is made up almost exclusively of phages from within the *Caudovirales* order
+and is further biased towards a small number of hosts (95% infect species
+within the orders *Actinobacteria*, *Gammaproteobacteria*, and *Bacilli*). We
+thus urge caution when predicting the lifestyle of phages outside of these
+phylogenetic orders. We also further reiterate that `BACPHLIP` was developed
+for use on complete phage genomes and performance on fragmented or partially
+assembled genomes is likely to be degraded; users are strongly encouraged to
+ensure that the starting assumptions (re-itereated extensively in the package
+documentation) are met prior to running `BACPHLIP`. We anticipate that the
+accuracy of `BACPHLIP` will increase in future releases as: i) more
+phylogenetically diverse phages become available for training the classifier
+(potentially via analysis of prophages and/or meta-genomic studies) and ii)
+discovery and annotation of conserved protein domains improves to encapsulate
+new domains and more phylogenetic diversity amongst the existing protein
+domains that `BACPHLIP` currently relies on.
 
 # Acknowledgements
 
