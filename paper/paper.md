@@ -42,7 +42,7 @@ Bacteriophages play important ecological roles [@paez-espino_uncovering_2016;
 @gregory_marine_2019], influence both the physiology and evolution of host
 species [@touchon_genetic_2016; @carey_phage_2019], and possess a number of
 unique traits that are relevant to ongoing biotechnological and medical
-applications [@ofir_contemporary_201; 8@dedrick_engineered_2019;
+applications [@ofir_contemporary_2018; @dedrick_engineered_2019;
 @rodriguez-gonzalez_quantitative_2020]. The diversity and availability of phage
 genome sequences has expanded in recent years due to the development of
 metagenomic sequencing techniques [@deng_viral_2014; @pope_whole_2015;
